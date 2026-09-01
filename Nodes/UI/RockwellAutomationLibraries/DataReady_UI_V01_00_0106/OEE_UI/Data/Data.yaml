@@ -1,0 +1,101 @@
+Name: Data
+Type: FolderType
+Children:
+- Name: StateColors
+  Type: BaseObjectType
+  Children:
+  - Name: State1
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eb001b"
+  - Name: State2
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#1be74a"
+  - Name: State3
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8e71c"
+  - Name: State4
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00ff18"
+  - Name: State5
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#029509"
+  - Name: State6
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00ff18"
+  - Name: State7
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00ff18"
+  - Name: State8
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00ff18"
+  - Name: State9
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00ff18"
+  - Name: State10
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eb001b"
+  - Name: State11
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8e71c"
+  - Name: State12
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#029509"
+  - Name: State13
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#029509"
+  - Name: State14
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00ff18"
+  - Name: State15
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#029509"
+  - Name: State16
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#029509"
+  - Name: State17
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8e71c"
+  - Name: State18
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8e71c"
+  - Name: State19
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8e71c"
+  - Name: State20
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eb001b"
+- Name: OEEColors
+  Type: BaseObjectType
+  Children:
+  - Name: Alert
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ed1a1a"
+  - Name: Warning
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eded1a"
+  - Name: Target
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#1be74a"

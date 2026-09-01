@@ -1,0 +1,6 @@
+Name: WAGES
+Type: FolderType
+Children:
+- File: Databases/Databases.yaml
+- File: Scripts/Scripts.yaml
+- File: Data/Data.yaml

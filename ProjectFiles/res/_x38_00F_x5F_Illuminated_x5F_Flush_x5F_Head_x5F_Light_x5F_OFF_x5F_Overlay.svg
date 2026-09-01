@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_lZ4Z1" x="0px" y="0px" width="97.455px" height="97.453px" viewBox="0 0 97.455 97.453" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="48.2793" y1="17.3037" x2="48.2793" y2="95.2734">
+    <stop offset="0" style="stop-color:#231F20;stop-opacity:0.14"/>
+    <stop offset="1" style="stop-color:#231F20;stop-opacity:0.44"/>
+  </linearGradient>
+  <path display="none" fill="url(#SVGID_5_)" d="M48.281-2.56c-28.375,0-51.375,23-51.375,51.373c0,0.221,0.029,0.434,0.034,0.654&#xD;&#xA;&#x9;&#x9;c0.353,28.07,23.187,50.719,51.341,50.719c5.359,0,10.529-0.826,15.385-2.35c0.309-0.097,0.605-0.215,0.91-0.318&#xD;&#xA;&#x9;&#x9;c2.861-0.96,5.596-2.186,8.205-3.621c0.617-0.336,1.232-0.674,1.836-1.034c14.803-8.871,24.782-24.94,25.014-43.396&#xD;&#xA;&#x9;&#x9;c0.001-0.221,0.021-0.434,0.021-0.654C99.652,20.44,76.652-2.56,48.281-2.56z"/>
+  <radialGradient id="SVGID_6_" cx="48.7246" cy="48.7295" r="32.3848" gradientUnits="userSpaceOnUse">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.3"/>
+    <stop offset="0.8587" style="stop-color:#000000;stop-opacity:0.3"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.3"/>
+  </radialGradient>
+  <path fill="url(#SVGID_6_)" d="M81.112,48.725c0,17.889-14.499,32.387-32.388,32.387S16.338,66.613,16.338,48.725&#xD;&#xA;&#x9;&#x9;c0-17.881,14.498-32.377,32.387-32.377S81.112,30.844,81.112,48.725z"/>
+  <radialGradient id="SVGID_7_" cx="48.7256" cy="48.7275" r="40.3184" gradientUnits="userSpaceOnUse">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.3"/>
+    <stop offset="0.8587" style="stop-color:#000000;stop-opacity:0.3"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.3"/>
+  </radialGradient>
+  <path fill="url(#SVGID_7_)" d="M89.047,48.725c0,22.271-18.051,40.318-40.322,40.318S8.404,70.996,8.404,48.725&#xD;&#xA;&#x9;&#x9;c0-22.263,18.049-40.312,40.32-40.312S89.047,26.462,89.047,48.725z"/>
+</svg>

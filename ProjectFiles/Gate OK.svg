@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="227.89999"
+   height="347.89999"
+   viewBox="0 0 227.89999 347.89999"
+   sodipodi:docname="Gate OK.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.3153409"
+     inkscape:cx="113.86461"
+     inkscape:cy="173.8886"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1"
+     transform="translate(-5.9999998,-1.9999998)">
+    <path
+       style="fill:#00ff00"
+       d="m 43.999999,314.10883 v -142.5 V 29.108826 H 120 196 v 142.500004 142.5 l -0.0189,9 H 120 44.320479 Z M 186.75352,175.85883 186.5,37.608826 H 120 53.499999 l -0.25352,138.250004 -0.25352,138.25 H 120 187.00704 Z M 160,176.10883 v -20 h 4.5 4.5 v 20 20 h -4.5 -4.5 z"
+       id="path1"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccc" />
+    <rect
+       style="fill:none;stroke:#00ff00;stroke-width:7.9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1"
+       width="220"
+       height="340"
+       x="9.9499998"
+       y="5.9499998"
+       ry="46.498714"
+       rx="0" />
+  </g>
+</svg>

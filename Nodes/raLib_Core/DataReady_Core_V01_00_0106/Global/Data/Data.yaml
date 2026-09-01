@@ -1,0 +1,88 @@
+Name: Data
+Type: ModelCategoryFolder
+Children:
+- Name: DateTimeRange
+  Type: BaseObjectType
+  Children:
+  - Name: Range
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 4
+  - Name: Start
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2022-01-01T00:00:00.0000000"
+  - Name: End
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2025-01-01T00:00:00.0000000"
+  - Name: StartUTC
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2022-01-01T00:00:00.0000000"
+  - Name: EndUTC
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2025-01-01T00:00:00.0000000"
+  - Name: RefreshDataWidgets
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: UpdateDateTime
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoRefreshEnable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoRefreshRateSec
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+- Name: DRInfoModelsPresent
+  Type: BaseObjectType
+  Children:
+  - Name: AssetID
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: MaintEvents
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: MaintEventsDatabase_Table
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/raLib_Core/DataReady_Core_V01_00_0106/MaintEvents/Databases/MaintEventsDatabase/Tables/raI_01_00_0106_MaintEvents"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: OEEDatabase_Table
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/raLib_Core/DataReady_Core_V01_00_0106/OEE/Databases/OEEDatabase/Tables/raI_01_00_0106_OEE"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+  - Name: WAGES
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: WAGESDatabase_Table
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/raLib_Core/DataReady_Core_V01_00_0106/WAGES/Databases/WAGESDatabase/Tables/raI_01_00_0106_WAGES"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+- Name: NotUsed_DoNotDelete
+  Id: g=567198d781d450bece230f90f25eeb81
+  Type: BaseObjectType

@@ -1,0 +1,28 @@
+Name: DataReady_UI_V01_00_0106
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"DataReady Library UI V01.00.0106"}
+Children:
+- File: drSDK/drSDK.yaml
+- File: SampleCode/SampleCode.yaml
+- File: General/General.yaml
+- File: DateTime/DateTime.yaml
+- File: AssetID_UI/AssetID_UI.yaml
+- File: MaintEvents_UI/MaintEvents_UI.yaml
+- File: OEE_UI/OEE_UI.yaml
+- File: WAGES_UI/WAGES_UI.yaml
+- Name: ns=19;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 19
+    },
+    "Body": {
+     "libraryGuid": "ec94fb5c980f1534d6aa8059bdfd9df1",
+     "objectGuid": "cab09f4eb1d9d66dab72f4ee80686d3f",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }

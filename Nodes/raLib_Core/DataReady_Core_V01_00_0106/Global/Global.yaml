@@ -1,0 +1,10 @@
+Name: Global
+Type: FolderType
+Children:
+- File: DataReadyTypes/DataReadyTypes.yaml
+- File: InformationModel/InformationModel.yaml
+- File: Scripts/Scripts.yaml
+- File: EnumLists/EnumLists.yaml
+- File: EnumTranslations/EnumTranslations.yaml
+- File: Data/Data.yaml
+- File: Retentivity/Retentivity.yaml

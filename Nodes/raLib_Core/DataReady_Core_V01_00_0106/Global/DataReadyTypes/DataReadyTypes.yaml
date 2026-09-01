@@ -1,0 +1,922 @@
+Name: DataReadyTypes
+Type: FolderType
+Children:
+- Name: raI_01_00_0106_AssetID
+  Id: g=8f7b5b39570c362101e0f23423d5a1e9
+  Supertype: BaseObjectType
+  Children:
+  - Name: CrntSet
+    Type: BaseObjectType
+    Children:
+    - Name: UserLatitude
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserLongitude
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserContactName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserContactPhone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserContactEmail
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetCategory
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserUnifiedNameSpaceID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetID1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetID2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetID3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetID4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetIDLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetIDLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetIDLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAssetIDLabel4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMBusinessUnit
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMBusinessUnitSub1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMBusinessUnitSub2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMPhone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMEmail
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMWebsite
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMSerialNo
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMModelCategory
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMModelSubCategory
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ServiceStartDate
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEMSoftwareVersion
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserAddress
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserLocation
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserLocationSub1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UserLocationSub2
+      Type: BaseDataVariableType
+      DataType: String
+  - Name: AOIInfo
+    Type: BaseObjectType
+    Children:
+    - Name: AOIInfoSts
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InstanceName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RoutineName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProgramName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Type
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Library
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Revision
+      Type: BaseDataVariableType
+      DataType: Float
+- Name: raI_01_00_0106_OEE
+  Id: g=2b68f084f1635949a8eb2c19efc3cb18
+  Supertype: BaseObjectType
+  Children:
+  - Name: ReqSet
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ShiftID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProductID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OrderID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OperatorID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ScheduledStatus
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: IdealCycleTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: UnitRatio
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: OEETarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: AvailTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: PerfTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: QualTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ContextVarLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel4
+      Type: BaseDataVariableType
+      DataType: String
+  - Name: CrntSet
+    Type: BaseObjectType
+    Children:
+    - Name: ContextVarLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RejectCountLabel4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ScheduledStatus
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: UnitRatio
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ShiftID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProductID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OrderID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OperatorID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEETarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: AvailTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: PerfTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: QualTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: IdealCycleTime
+      Type: BaseDataVariableType
+      DataType: Float
+  - Name: Data
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ScheduledStatus
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ScheduledTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RunningStatus
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: RunningTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: TotalIdealTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: GoodIdealTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: TotalCount
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: TotalCountDelta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: GoodCount
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: GoodCountDelta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount1
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount1Delta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount2
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount2Delta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount3
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount3Delta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount4
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: RejectCount4Delta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Mode
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: State
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ReasonCode
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Category
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: IdealCycleTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ActualCycleTime
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: UnitRatio
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ShiftID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProductID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OrderID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OperatorID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: OEETarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: AvailTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: PerfTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: QualTarget
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: _NewDataTrigger
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: AOIInfo
+    Type: BaseObjectType
+    Children:
+    - Name: AOIInfoCmd
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AOIInfoSts
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InstanceName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RoutineName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProgramName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Type
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Library
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Revision
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: AOIInfoCfg
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: _HMIEnable
+    Type: BaseObjectType
+    Children:
+    - Name: AssetIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProductIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OrderIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShiftIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperatorIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ScheduledStatusEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: UnitRatioEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OEETargetEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AvailTargetEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PerfTargetEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: QualTargetEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar1Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar2Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar3Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar4Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel1Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel2Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel3Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel4Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RejectCountLabel1Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RejectCountLabel2Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RejectCountLabel3Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RejectCountLabel4Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: IdealCycleTimeEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+- Name: raI_01_00_0106_WAGES
+  Id: g=b1096e6ddeac1606b1b69f016af7194f
+  Supertype: BaseObjectType
+  Children:
+  - Name: ReqSet
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EngineeringUnits
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ResourceType
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: MeasurementID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AccuracyClass
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AccuracyDomain
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: MeterID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+  - Name: CrntSet
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EngineeringUnits
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ResourceType
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: MeasurementID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AccuracyDomain
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AccuracyClass
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: MeterID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+  - Name: Data
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ConsumedResourceDelta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ConsumedResource
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: GeneratedResourceDelta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: GeneratedResource
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: NetResourceDelta
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: NetResource
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ConsumedValBeforeReset
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: ElectricalDemand
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: TransferRate
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: _NewDataTrigger
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: MeterID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+  - Name: AOIInfo
+    Type: BaseObjectType
+    Children:
+    - Name: AOIInfoCmd
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AOIInfoSts
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InstanceName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RoutineName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProgramName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Type
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Library
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Revision
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: AOIInfoCfg
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: _HMIEnable
+    Type: BaseObjectType
+    Children:
+    - Name: AssetIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: MeterIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EngineeringUnitsEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResourceTypeEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: MeasurementIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AccuracyClassEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AccuracyDomainEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnableSelectionPanel
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RunningTotalEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConsumptionEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: GeneratedEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: NetConsumptionEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RunningTotalSelectionEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConsumptionSelectionEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: GeneratedSelectionEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: NetConsumptionSelectionEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+- Name: raI_01_00_0106_MaintEvents
+  Id: g=b7e2f5cdd1761ce7bba5b08b6ae059f0
+  Supertype: BaseObjectType
+  Children:
+  - Name: ReqSet
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Code
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EventID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel4
+      Type: BaseDataVariableType
+      DataType: String
+  - Name: CrntSet
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Code
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EventID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVarLabel4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+  - Name: Data
+    Type: BaseObjectType
+    Children:
+    - Name: AssetID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EventID
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Code
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Severity
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Category
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Description
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ContextVar1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar3
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ContextVar4
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: _NewDataTrigger
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: AOIInfo
+    Type: BaseObjectType
+    Children:
+    - Name: AOIInfoCmd
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AOIInfoSts
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: InstanceName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: RoutineName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ProgramName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Type
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Library
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Revision
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: AOIInfoCfg
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: _HMIEnable
+    Type: BaseObjectType
+    Children:
+    - Name: AssetIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EventIDEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CodeEnable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ContextVarLabel1Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel2Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel3Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVarLabel4Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar1Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar2Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar3Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ContextVar4Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+- Name: raI_01_00_0106_Level2_0
+  Id: g=b4039213af0ae7c1c71f1cd0ed9fdd5d
+  Supertype: BaseObjectType
+- Name: raI_01_00_0106_Level2_1
+  Id: g=3580e13b8daab1232d6dd389a7086612
+  Supertype: BaseObjectType
+- Name: raI_01_00_0106_Level2_2
+  Id: g=b75b025c7a7c0d37e16bf958c3218d52
+  Supertype: BaseObjectType

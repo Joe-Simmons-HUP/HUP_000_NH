@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40.836 56" overflow="visible" xml:space="preserve">
+<g id="grid" display="none">
+</g>
+<g id="stk">
+	
+		<rect x="-80.171" y="-6.344" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" width="530.325" height="69.711"/>
+	<g>
+		
+			<rect x="13.298" y="28.714" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 68.4022 15.4944)" fill="#D9D9D9" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" width="26.312" height="26.469"/>
+		<rect x="1" y="0.995" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" width="38.836" height="54.01"/>
+		<g>
+			
+				<rect x="1.082" y="1.193" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" width="11.675" height="53.735"/>
+			
+				<rect x="18.069" y="5.355" fill="#D9D9D9" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" width="8.989" height="19.508"/>
+			<g>
+				<circle fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" cx="33.503" cy="7.206" r="2.116"/>
+			</g>
+			<g>
+				<circle fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" cx="33.503" cy="14.894" r="2.116"/>
+			</g>
+			<g>
+				<circle fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" cx="33.503" cy="22.656" r="2.116"/>
+			</g>
+			<line fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" x1="11.811" y1="28.665" x2="39.222" y2="28.665"/>
+			<g>
+				
+					<rect x="21.32" y="38.579" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" width="8.989" height="12.261"/>
+				<line fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" x1="20.827" y1="42.708" x2="30.302" y2="42.708"/>
+				<line fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" x1="20.827" y1="46.685" x2="30.302" y2="46.685"/>
+			</g>
+			<g>
+				<g>
+					<rect x="4.889" y="26.125" fill="#9B9B9B" width="3.499" height="8.955"/>
+				</g>
+			</g>
+			<line fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" x1="8.388" y1="39.359" x2="4.89" y2="39.359"/>
+			<line fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" x1="8.388" y1="44.852" x2="4.89" y2="44.852"/>
+			<line fill="none" stroke="#9B9B9B" stroke-width="2" stroke-miterlimit="10" x1="8.388" y1="50.346" x2="4.89" y2="50.346"/>
+		</g>
+	</g>
+</g>
+</svg>

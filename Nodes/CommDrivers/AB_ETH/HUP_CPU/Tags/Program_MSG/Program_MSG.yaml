@@ -1,0 +1,1174 @@
+Name: 'Program:MSG'
+Type: FolderType
+Children:
+- Name: TL_1
+  Type: _AOI_Tower_Light
+  DataType: _AOI_Tower_Light
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MSG.TL_1"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Werma Multi Color Tower Light"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.EnableOut.@Description"
+  - Name: WH_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.WH_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "White\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.WH_Request.@Description"
+  - Name: BL_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.BL_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Blue\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.BL_Request.@Description"
+  - Name: GN_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.GN_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Green\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.GN_Request.@Description"
+  - Name: RD_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.RD_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Red\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.RD_Request.@Description"
+  - Name: CY_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.CY_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Cyan\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.CY_Request.@Description"
+  - Name: YE_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.YE_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Yellow\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.YE_Request.@Description"
+  - Name: MG_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.MG_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Magenta\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.MG_Request.@Description"
+  - Name: Audible_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.Audible_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Audible\r\nSound\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.Audible_Request.@Description"
+  - Name: TRM_1_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.TRM_1_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Terminal 1\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.TRM_1_Out.@Description"
+  - Name: TRM_2_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.TRM_2_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Terminal 2\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.TRM_2_Out.@Description"
+  - Name: TRM_3_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.TRM_3_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Terminal 3\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.TRM_3_Out.@Description"
+  - Name: TRM_AK_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.TRM_AK_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Terminal AK\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.TRM_AK_Out.@Description"
+  - Name: Color_Pointer
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.TL_1.Color_Pointer"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Active Color\r\nPointer"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.TL_1.Color_Pointer.@Description"
+- Name: SL_1
+  Type: _AOI_Status_Light
+  DataType: _AOI_Status_Light
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MSG.SL_1"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Multi Color Status Light"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.EnableOut.@Description"
+  - Name: WH_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.WH_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "White\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.WH_Request.@Description"
+  - Name: BL_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.BL_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Blue\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.BL_Request.@Description"
+  - Name: GN_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.GN_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Green\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.GN_Request.@Description"
+  - Name: RD_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.RD_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Red\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.RD_Request.@Description"
+  - Name: YE_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.YE_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Yellow\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.YE_Request.@Description"
+  - Name: Pin_1_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.Pin_1_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 1\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.Pin_1_Out.@Description"
+  - Name: Pin_2_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.Pin_2_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 2\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.Pin_2_Out.@Description"
+  - Name: Pin_4_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.Pin_4_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 4\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.Pin_4_Out.@Description"
+  - Name: Pin_5_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.Pin_5_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 5\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.Pin_5_Out.@Description"
+  - Name: Color_Pointer
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_1.Color_Pointer"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Active Color\r\nPointer"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_1.Color_Pointer.@Description"
+- Name: SL_2
+  Type: _AOI_Status_Light
+  DataType: _AOI_Status_Light
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MSG.SL_2"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Multi Color Status Light"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.EnableOut.@Description"
+  - Name: WH_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.WH_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "White\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.WH_Request.@Description"
+  - Name: BL_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.BL_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Blue\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.BL_Request.@Description"
+  - Name: GN_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.GN_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Green\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.GN_Request.@Description"
+  - Name: RD_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.RD_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Red\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.RD_Request.@Description"
+  - Name: YE_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.YE_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Yellow\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.YE_Request.@Description"
+  - Name: Pin_1_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.Pin_1_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 1\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.Pin_1_Out.@Description"
+  - Name: Pin_2_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.Pin_2_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 2\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.Pin_2_Out.@Description"
+  - Name: Pin_4_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.Pin_4_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 4\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.Pin_4_Out.@Description"
+  - Name: Pin_5_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.Pin_5_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 5\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.Pin_5_Out.@Description"
+  - Name: Color_Pointer
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_2.Color_Pointer"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Active Color\r\nPointer"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_2.Color_Pointer.@Description"
+- Name: SL_3
+  Type: _AOI_Status_Light
+  DataType: _AOI_Status_Light
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MSG.SL_3"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Multi Color Status Light"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.EnableOut.@Description"
+  - Name: WH_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.WH_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "White\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.WH_Request.@Description"
+  - Name: BL_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.BL_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Blue\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.BL_Request.@Description"
+  - Name: GN_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.GN_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Green\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.GN_Request.@Description"
+  - Name: RD_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.RD_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Red\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.RD_Request.@Description"
+  - Name: YE_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.YE_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Yellow\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.YE_Request.@Description"
+  - Name: Pin_1_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.Pin_1_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 1\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.Pin_1_Out.@Description"
+  - Name: Pin_2_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.Pin_2_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 2\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.Pin_2_Out.@Description"
+  - Name: Pin_4_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.Pin_4_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 4\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.Pin_4_Out.@Description"
+  - Name: Pin_5_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.Pin_5_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 5\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.Pin_5_Out.@Description"
+  - Name: Color_Pointer
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_3.Color_Pointer"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Active Color\r\nPointer"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_3.Color_Pointer.@Description"
+- Name: SL_4
+  Type: _AOI_Status_Light
+  DataType: _AOI_Status_Light
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MSG.SL_4"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Multi Color Status Light"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.EnableOut.@Description"
+  - Name: WH_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.WH_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "White\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.WH_Request.@Description"
+  - Name: BL_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.BL_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Blue\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.BL_Request.@Description"
+  - Name: GN_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.GN_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Green\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.GN_Request.@Description"
+  - Name: RD_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.RD_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Red\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.RD_Request.@Description"
+  - Name: YE_Request
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.YE_Request"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Yellow\r\nLight\r\nRequest"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.YE_Request.@Description"
+  - Name: Pin_1_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.Pin_1_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 1\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.Pin_1_Out.@Description"
+  - Name: Pin_2_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.Pin_2_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 2\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.Pin_2_Out.@Description"
+  - Name: Pin_4_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.Pin_4_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 4\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.Pin_4_Out.@Description"
+  - Name: Pin_5_Out
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.Pin_5_Out"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Pin 5\r\nOutput"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.Pin_5_Out.@Description"
+  - Name: Color_Pointer
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MSG.SL_4.Color_Pointer"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Active Color\r\nPointer"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MSG.SL_4.Color_Pointer.@Description"

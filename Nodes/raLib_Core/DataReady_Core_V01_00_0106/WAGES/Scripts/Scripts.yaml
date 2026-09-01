@@ -1,0 +1,33 @@
+Name: Scripts
+Type: NetLogicCategoryFolder
+Children:
+- Name: WAGESDatabaseLoader
+  Id: g=afeca58fef5bae60ade5090428bd6af2
+  Type: NetLogic
+  Children:
+  - Name: DebugEnable
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Method
+    Name: DeleteWAGES
+  - Class: Method
+    Name: LimitWAGESDBSize
+  - Name: TargetTimeHorizon_Days
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.0
+  - Name: CurrentTimeHorizon_Days
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentTableSize_MB
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: CurrentRowCount
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: MaxTableSize_MB
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: MaxRowCount
+    Type: BaseDataVariableType
+    DataType: Int32

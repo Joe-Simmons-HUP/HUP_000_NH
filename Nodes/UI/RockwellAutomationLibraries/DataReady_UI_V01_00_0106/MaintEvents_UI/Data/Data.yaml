@@ -1,0 +1,30 @@
+Name: Data
+Type: FolderType
+Children:
+- Name: MaintEventsColors
+  Type: BaseObjectType
+  Children:
+  - Name: Level1
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eded1a"
+  - Name: Level2
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f59800"
+  - Name: Level3
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ed1a1a"
+  - Name: Level4
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eb001b"
+  - Name: Level5
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#eb001b"
+  - Name: Level0
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#28f323"

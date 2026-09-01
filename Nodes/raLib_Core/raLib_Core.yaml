@@ -1,0 +1,20 @@
+Name: raLib_Core
+Type: FolderType
+Children:
+- Name: ns=19;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 19
+    },
+    "Body": {
+     "libraryGuid": "ec94fb5c980f1534d6aa8059bdfd9df1",
+     "objectGuid": "44cabf0a36c8323a115286b03d76f9a0",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }
+- File: DataReady_Core_V01_00_0106/DataReady_Core_V01_00_0106.yaml

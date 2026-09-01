@@ -1,0 +1,10 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: Controller_Tags/Controller_Tags.yaml
+- File: Program_Box_Conveyor/Program_Box_Conveyor.yaml
+- File: Program_MSG/Program_MSG.yaml
+- File: Program_Product_Conveyor/Program_Product_Conveyor.yaml
+- File: Program_Recipe/Program_Recipe.yaml
+- File: Program_Robot01/Program_Robot01.yaml
+- File: Program_Tracking/Program_Tracking.yaml

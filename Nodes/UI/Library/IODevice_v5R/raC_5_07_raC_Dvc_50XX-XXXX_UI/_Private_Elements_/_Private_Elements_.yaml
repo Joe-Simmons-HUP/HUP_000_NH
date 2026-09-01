@@ -1,0 +1,1084 @@
+Name: <Private Elements>
+Type: FolderType
+Children:
+- File: 'Panels_-_Faceplate/Panels_-_Faceplate.yaml'
+- File: PrivateWidgets/PrivateWidgets.yaml
+- Name: raC_5_07_raC_Dvc_50XX_Help
+  Id: g=16199c744ec508135cb388b31234a8df
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 700.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Help
+      Type: ScrollView
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: PDFViewer
+        Type: PdfViewer
+        Children:
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: "ns=30;%PROJECTDIR%/res/Help raC-5 IO.pdf"
+        - Name: CurrentPage
+          Type: BaseDataVariableType
+          DataType: Int32
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 400.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Device - RM200/Expanded"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: true
+      - Name: ContentWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentHeight
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewHeight
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentX
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: ContentY
+        Type: BaseDataVariableType
+        DataType: Size
+      - Class: Reference
+        Target: ns=9;i=1394
+        Direction: Forward
+    - Name: 'Device - RM200'
+      Type: Accordion
+      Children:
+      - Name: Header
+        Type: AccordionHeader
+        Children:
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Device - RM200"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "Heading"
+          - Name: WordWrap
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: TextVerticalAlignment
+            Type: BaseVariableType
+            DataType: TextVerticalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+      - Name: Content
+        Type: AccordionContent
+        Children:
+        - Name: WebBrowser1
+          Type: WebBrowser
+          Children:
+          - Name: URL
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/device-rm200_-en-p.pdf"
+          - Class: Reference
+            Target: ns=9;i=354
+            Direction: Forward
+          - Class: Reference
+            Target: ns=9;i=356
+            Direction: Forward
+          - Class: Reference
+            Target: ns=9;i=358
+            Direction: Forward
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 570.0
+      - Name: Expanded
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 200.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+- Class: DataType
+  Name: raC_5_07_raC_Dvc_50XX_CatNum_Enum
+  Id: g=047e5d091b6b318ac55ef93a35d58bd1
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "raC_5_06_raC_Dvc_50XX_CatNum_Enum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "047e5d091b6b318ac55ef93a35d58bd1",
+     "Namespace": 30
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 500,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Digital Input - -"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 44,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IA16"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 47,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IB6F-3W"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 45,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IB16"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 46,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IB16F"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IB16"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IB16XT"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IA16"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IA16XT"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IB32"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IB32XT"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IM8"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IM8XT"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 81,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IB16"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 83,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IB8"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 600,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Digital Output - -"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 48,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OA16"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 49,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OB16"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 50,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OB16F"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 51,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OB8"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 52,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OW16"
+      }
+     },{
+      "Name": "Value21",
+      "Value": 53,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OW4I"
+      }
+     },{
+      "Name": "Value22",
+      "Value": 54,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OX4I"
+      }
+     },{
+      "Name": "Value23",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB16"
+      }
+     },{
+      "Name": "Value24",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB16XT"
+      }
+     },{
+      "Name": "Value25",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OA16"
+      }
+     },{
+      "Name": "Value26",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OA16XT"
+      }
+     },{
+      "Name": "Value27",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB32"
+      }
+     },{
+      "Name": "Value28",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB32XT"
+      }
+     },{
+      "Name": "Value29",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB8"
+      }
+     },{
+      "Name": "Value30",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB8XT"
+      }
+     },{
+      "Name": "Value31",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OW8I"
+      }
+     },{
+      "Name": "Value32",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OW8IXT"
+      }
+     },{
+      "Name": "Value33",
+      "Value": 82,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OB16"
+      }
+     },{
+      "Name": "Value34",
+      "Value": 84,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OB8"
+      }
+     },{
+      "Name": "Value35",
+      "Value": 601,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OW4I"
+      }
+     },{
+      "Name": "Value36",
+      "Value": 602,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OB4"
+      }
+     },{
+      "Name": "Value37",
+      "Value": 700,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Analog Input - -"
+      }
+     },{
+      "Name": "Value38",
+      "Value": 55,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IF8"
+      }
+     },{
+      "Name": "Value39",
+      "Value": 56,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IY4"
+      }
+     },{
+      "Name": "Value40",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IF8"
+      }
+     },{
+      "Name": "Value41",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IF8XT"
+      }
+     },{
+      "Name": "Value42",
+      "Value": 22,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IY8_IR"
+      }
+     },{
+      "Name": "Value43",
+      "Value": 23,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IY8_IT"
+      }
+     },{
+      "Name": "Value44",
+      "Value": 24,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IJ2I"
+      }
+     },{
+      "Name": "Value45",
+      "Value": 25,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IJ2IXT"
+      }
+     },{
+      "Name": "Value46",
+      "Value": 85,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IF4"
+      }
+     },{
+      "Name": "Value47",
+      "Value": 701,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IF8C"
+      }
+     },{
+      "Name": "Value48",
+      "Value": 702,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IF8V"
+      }
+     },{
+      "Name": "Value49",
+      "Value": 703,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IRT4I"
+      }
+     },{
+      "Name": "Value50",
+      "Value": 800,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Analog Input HART - -"
+      }
+     },{
+      "Name": "Value51",
+      "Value": 26,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IF8IH"
+      }
+     },{
+      "Name": "Value52",
+      "Value": 28,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IF8IHXT"
+      }
+     },{
+      "Name": "Value53",
+      "Value": 59,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IF4IH"
+      }
+     },{
+      "Name": "Value54",
+      "Value": 801,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IF4IH"
+      }
+     },{
+      "Name": "Value112",
+      "Value": 802,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IF4IHXT"
+      }
+     },{
+      "Name": "Value55",
+      "Value": 900,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Analog Output - -"
+      }
+     },{
+      "Name": "Value56",
+      "Value": 57,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OF4"
+      }
+     },{
+      "Name": "Value57",
+      "Value": 58,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OF8"
+      }
+     },{
+      "Name": "Value58",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OF8"
+      }
+     },{
+      "Name": "Value59",
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OF8XT"
+      }
+     },{
+      "Name": "Value60",
+      "Value": 86,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OF4"
+      }
+     },{
+      "Name": "Value61",
+      "Value": 1000,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Analog Output HART - -"
+      }
+     },{
+      "Name": "Value62",
+      "Value": 30,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OF8IH"
+      }
+     },{
+      "Name": "Value63",
+      "Value": 32,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OF8IHXT"
+      }
+     },{
+      "Name": "Value64",
+      "Value": 61,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OF4IH"
+      }
+     },{
+      "Name": "Value65",
+      "Value": 1001,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OF4IH"
+      }
+     },{
+      "Name": "Value113",
+      "Value": 1002,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OF4IHXT"
+      }
+     },{
+      "Name": "Value66",
+      "Value": 1100,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Safety Input - -"
+      }
+     },{
+      "Name": "Value67",
+      "Value": 63,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IB8S_Safety"
+      }
+     },{
+      "Name": "Value68",
+      "Value": 64,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-IB8S_SafetyMuting"
+      }
+     },{
+      "Name": "Value69",
+      "Value": 34,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IB16S"
+      }
+     },{
+      "Name": "Value70",
+      "Value": 35,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IB16SXT"
+      }
+     },{
+      "Name": "Value71",
+      "Value": 40,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IJ2IS"
+      }
+     },{
+      "Name": "Value72",
+      "Value": 41,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IJ2ISXT"
+      }
+     },{
+      "Name": "Value73",
+      "Value": 89,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IF4IHS"
+      }
+     },{
+      "Name": "Value74",
+      "Value": 93,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-IF4IHSXT"
+      }
+     },{
+      "Name": "Value75",
+      "Value": 1101,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-IB8S"
+      }
+     },{
+      "Name": "Value76",
+      "Value": 1200,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Safety Output - -"
+      }
+     },{
+      "Name": "Value77",
+      "Value": 65,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-OBV8S"
+      }
+     },{
+      "Name": "Value78",
+      "Value": 36,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB16S"
+      }
+     },{
+      "Name": "Value79",
+      "Value": 37,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OB16SXT"
+      }
+     },{
+      "Name": "Value80",
+      "Value": 38,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OW4IS"
+      }
+     },{
+      "Name": "Value81",
+      "Value": 91,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OF4IHS"
+      }
+     },{
+      "Name": "Value82",
+      "Value": 39,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OW4ISXT"
+      }
+     },{
+      "Name": "Value83",
+      "Value": 95,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-OF4IHSXT"
+      }
+     },{
+      "Name": "Value84",
+      "Value": 1201,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-OB8S"
+      }
+     },{
+      "Name": "Value85",
+      "Value": 1300,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Speciality - -"
+      }
+     },{
+      "Name": "Value86",
+      "Value": 67,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-HSC2XOB4"
+      }
+     },{
+      "Name": "Value87",
+      "Value": 42,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-HSC"
+      }
+     },{
+      "Name": "Value88",
+      "Value": 43,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-HSCXT"
+      }
+     },{
+      "Name": "Value89",
+      "Value": 1301,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-ENC"
+      }
+     },{
+      "Name": "Value90",
+      "Value": 1400,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Serial - -"
+      }
+     },{
+      "Name": "Value91",
+      "Value": 68,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "50xx-SERIAL"
+      }
+     },{
+      "Name": "Value92",
+      "Value": 1600,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Adapter - -"
+      }
+     },{
+      "Name": "Value93",
+      "Value": 71,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AEN2SFPR"
+      }
+     },{
+      "Name": "Value94",
+      "Value": 72,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AEN2SFPRXT"
+      }
+     },{
+      "Name": "Value95",
+      "Value": 73,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AEN2TR"
+      }
+     },{
+      "Name": "Value96",
+      "Value": 74,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AEN2TRXT"
+      }
+     },{
+      "Name": "Value97",
+      "Value": 75,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AENSFPR"
+      }
+     },{
+      "Name": "Value98",
+      "Value": 76,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AENSFPRXT"
+      }
+     },{
+      "Name": "Value99",
+      "Value": 77,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AENTR"
+      }
+     },{
+      "Name": "Value100",
+      "Value": 78,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-AENTRXT"
+      }
+     },{
+      "Name": "Value101",
+      "Value": 79,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-AEN2TR"
+      }
+     },{
+      "Name": "Value102",
+      "Value": 80,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-AENTR"
+      }
+     },{
+      "Name": "Value103",
+      "Value": 87,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-AENTR"
+      }
+     },{
+      "Name": "Value104",
+      "Value": 88,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-AENTRXT"
+      }
+     },{
+      "Name": "Value105",
+      "Value": 1700,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - SlotFiller - -"
+      }
+     },{
+      "Name": "Value106",
+      "Value": 96,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5069-SlotFiller"
+      }
+     },{
+      "Name": "Value107",
+      "Value": 97,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5094-SlotFiller"
+      }
+     },{
+      "Name": "Value108",
+      "Value": 98,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-SlotFiller"
+      }
+     },{
+      "Name": "Value109",
+      "Value": 1500,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "- - Universal - -"
+      }
+     },{
+      "Name": "Value110",
+      "Value": 1501,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-UB8"
+      }
+     },{
+      "Name": "Value111",
+      "Value": 1502,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "5034-UB8F"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":500,"DisplayName":{"LocaleId":"en-US","Text":"- - Digital Input - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"LocaleId":"en-US","Text":"5069-IA16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"LocaleId":"en-US","Text":"5069-IB6F-3W"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"LocaleId":"en-US","Text":"5069-IB16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"LocaleId":"en-US","Text":"5069-IB16F"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"5094-IB16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"5094-IB16XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"5094-IA16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"5094-IA16XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"5094-IB32"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"5094-IB32XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"5094-IM8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"5094-IM8XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"LocaleId":"en-US","Text":"5034-IB16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"LocaleId":"en-US","Text":"5034-IB8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":600,"DisplayName":{"LocaleId":"en-US","Text":"- - Digital Output - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"LocaleId":"en-US","Text":"5069-OA16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"LocaleId":"en-US","Text":"5069-OB16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"LocaleId":"en-US","Text":"5069-OB16F"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"LocaleId":"en-US","Text":"5069-OB8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"LocaleId":"en-US","Text":"5069-OW16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"LocaleId":"en-US","Text":"5069-OW4I"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"LocaleId":"en-US","Text":"5069-OX4I"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB16XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"5094-OA16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"5094-OA16XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB32"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB32XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB8XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"5094-OW8I"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"5094-OW8IXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"LocaleId":"en-US","Text":"5034-OB16"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"LocaleId":"en-US","Text":"5034-OB8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":601,"DisplayName":{"LocaleId":"en-US","Text":"5034-OW4I"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":602,"DisplayName":{"LocaleId":"en-US","Text":"5034-OB4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":700,"DisplayName":{"LocaleId":"en-US","Text":"- - Analog Input - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"LocaleId":"en-US","Text":"5069-IF8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"LocaleId":"en-US","Text":"5069-IY4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"5094-IF8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"5094-IF8XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"5094-IY8_IR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"5094-IY8_IT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"5094-IJ2I"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"5094-IJ2IXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"LocaleId":"en-US","Text":"5034-IF4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":701,"DisplayName":{"LocaleId":"en-US","Text":"5034-IF8C"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":702,"DisplayName":{"LocaleId":"en-US","Text":"5034-IF8V"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":703,"DisplayName":{"LocaleId":"en-US","Text":"5034-IRT4I"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":800,"DisplayName":{"LocaleId":"en-US","Text":"- - Analog Input HART - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"LocaleId":"en-US","Text":"5094-IF8IH"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"LocaleId":"en-US","Text":"5094-IF8IHXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"LocaleId":"en-US","Text":"5069-IF4IH"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":801,"DisplayName":{"LocaleId":"en-US","Text":"5034-IF4IH"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":802,"DisplayName":{"LocaleId":"en-US","Text":"5034-IF4IHXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":900,"DisplayName":{"LocaleId":"en-US","Text":"- - Analog Output - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"LocaleId":"en-US","Text":"5069-OF4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"LocaleId":"en-US","Text":"5069-OF8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"5094-OF8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"5094-OF8XT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"LocaleId":"en-US","Text":"5034-OF4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1000,"DisplayName":{"LocaleId":"en-US","Text":"- - Analog Output HART - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"LocaleId":"en-US","Text":"5094-OF8IH"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"5094-OF8IHXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"LocaleId":"en-US","Text":"5069-OF4IH"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1001,"DisplayName":{"LocaleId":"en-US","Text":"5034-OF4IH"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1002,"DisplayName":{"LocaleId":"en-US","Text":"5034-OF4IHXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1100,"DisplayName":{"LocaleId":"en-US","Text":"- - Safety Input - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"LocaleId":"en-US","Text":"5069-IB8S_Safety"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"LocaleId":"en-US","Text":"5069-IB8S_SafetyMuting"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"5094-IB16S"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"5094-IB16SXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"en-US","Text":"5094-IJ2IS"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"LocaleId":"en-US","Text":"5094-IJ2ISXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"LocaleId":"en-US","Text":"5094-IF4IHS"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"LocaleId":"en-US","Text":"5094-IF4IHSXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1101,"DisplayName":{"LocaleId":"en-US","Text":"5034-IB8S"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1200,"DisplayName":{"LocaleId":"en-US","Text":"- - Safety Output - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"LocaleId":"en-US","Text":"5069-OBV8S"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB16S"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"en-US","Text":"5094-OB16SXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"en-US","Text":"5094-OW4IS"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"LocaleId":"en-US","Text":"5094-OF4IHS"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"en-US","Text":"5094-OW4ISXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"LocaleId":"en-US","Text":"5094-OF4IHSXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1201,"DisplayName":{"LocaleId":"en-US","Text":"5034-OB8S"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1300,"DisplayName":{"LocaleId":"en-US","Text":"- - Speciality - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"LocaleId":"en-US","Text":"5069-HSC2XOB4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"LocaleId":"en-US","Text":"5094-HSC"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"LocaleId":"en-US","Text":"5094-HSCXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1301,"DisplayName":{"LocaleId":"en-US","Text":"5034-ENC"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1400,"DisplayName":{"LocaleId":"en-US","Text":"- - Serial - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"LocaleId":"en-US","Text":"50xx-SERIAL"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1600,"DisplayName":{"LocaleId":"en-US","Text":"- - Adapter - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"LocaleId":"en-US","Text":"5094-AEN2SFPR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"LocaleId":"en-US","Text":"5094-AEN2SFPRXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"LocaleId":"en-US","Text":"5094-AEN2TR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"LocaleId":"en-US","Text":"5094-AEN2TRXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"LocaleId":"en-US","Text":"5094-AENSFPR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"LocaleId":"en-US","Text":"5094-AENSFPRXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"LocaleId":"en-US","Text":"5094-AENTR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"LocaleId":"en-US","Text":"5094-AENTRXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"LocaleId":"en-US","Text":"5069-AEN2TR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"LocaleId":"en-US","Text":"5069-AENTR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"LocaleId":"en-US","Text":"5034-AENTR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"LocaleId":"en-US","Text":"5034-AENTRXT"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1700,"DisplayName":{"LocaleId":"en-US","Text":"- - SlotFiller - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"LocaleId":"en-US","Text":"5069-SlotFiller"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"LocaleId":"en-US","Text":"5094-SlotFiller"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"LocaleId":"en-US","Text":"5034-SlotFiller"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1500,"DisplayName":{"LocaleId":"en-US","Text":"- - Universal - -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1501,"DisplayName":{"LocaleId":"en-US","Text":"5034-UB8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1502,"DisplayName":{"LocaleId":"en-US","Text":"5034-UB8F"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

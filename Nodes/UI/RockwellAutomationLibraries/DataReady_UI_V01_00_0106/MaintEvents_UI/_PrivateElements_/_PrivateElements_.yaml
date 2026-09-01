@@ -1,0 +1,6 @@
+Name: <PrivateElements>
+Type: FolderType
+Children:
+- File: Panels/Panels.yaml
+- File: Widgets/Widgets.yaml
+- File: Data/Data.yaml

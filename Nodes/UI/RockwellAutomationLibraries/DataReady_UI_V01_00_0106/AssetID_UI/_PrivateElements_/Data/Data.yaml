@@ -1,0 +1,80 @@
+Name: Data
+Type: FolderType
+Children:
+- Class: DataType
+  Name: AssetIDInstances
+  Id: g=fc0409ae4fe56c22af3578dd4728cf87
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "AssetIDInstances",
+    "DataType": {
+     "IdType": 2,
+     "Id": "fc0409ae4fe56c22af3578dd4728cf87",
+     "Namespace": 30
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [1]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"MachineModel/AssetID"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: AssetIDInstancesConverter
+  Id: g=cbc2a394b7c9498deeb70c5a5dda55df
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=7;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair0
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int16
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "MachineModel/AssetID"
+- Name: AssetIDNodeIDConverter
+  Id: g=b8593332011068a1fee9d75418819ce8
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=7;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair0
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int16
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/HUP_000_NH/raLib_Core/DataReady_Core_V01_00_0106/Global/InformationModel/MachineModel/AssetID"

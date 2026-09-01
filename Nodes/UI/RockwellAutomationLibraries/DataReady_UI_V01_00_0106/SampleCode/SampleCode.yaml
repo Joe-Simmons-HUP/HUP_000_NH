@@ -1,0 +1,8 @@
+Name: SampleCode
+Type: FolderType
+Children:
+- File: Widgets/Widgets.yaml
+- Name: Inf_Version
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Build 1.00.02"

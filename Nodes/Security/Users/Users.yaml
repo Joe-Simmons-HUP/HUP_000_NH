@@ -1,0 +1,17 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: User1
+  Id: g=24340fb057c880dd4e74b0b437bdb218
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=f8ee8a15d6cf5028752a3230661e2909
+  - Name: LocaleId
+    Id: g=5974f046977683d893b1d185441a38fd
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"

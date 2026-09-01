@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   viewBox="0 0 15.5 15.5"
+   id="svg1"
+   sodipodi:docname="State_Aborting_BLK.svg"
+   width="15.5"
+   height="15.5"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="75.290323"
+     inkscape:cx="7.75"
+     inkscape:cy="7.75"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     style="fill:#000000"
+     d="M 7.75,15.5 C 3.477,15.5 0,12.023 0,7.75 0,3.477 3.477,0 7.75,0 c 4.273,0 7.75,3.477 7.75,7.75 0,4.273 -3.476,7.75 -7.75,7.75 z m 0,-15 C 3.753,0.5 0.5,3.752 0.5,7.75 0.5,11.748 3.753,15 7.75,15 11.747,15 15,11.748 15,7.75 15,3.752 11.748,0.5 7.75,0.5 Z m 4.577,11.235 -3.985,-3.98499 3.969,-3.97 c 0.079,-0.079 0.123,-0.185 0.123,-0.296 0,-0.112 -0.044,-0.217 -0.123,-0.295 -0.079,-0.08 -0.184,-0.124 -0.296,-0.124 -0.112,0 -0.217,0.044 -0.297,0.123 l -3.968,3.969 -3.985,-3.985 c -0.164,-0.162 -0.429,-0.163 -0.593,10e-4 -0.163,0.163 -0.163,0.429 0,0.593 l 3.986,3.984 -3.951,3.95099 c -0.079,0.079 -0.123,0.184 -0.123,0.296 0,0.112 0.043,0.217 0.122,0.296 0.157,0.159 0.434,0.16 0.593,0.001 L 7.75,8.34301 11.734,12.327 c 0.08,0.079 0.185,0.123 0.296,0.123 0.113,0 0.218,-0.044 0.295,-0.122 0.08,-0.079 0.124,-0.185 0.124,-0.298 10e-4,-0.112 -0.043,-0.217 -0.122,-0.295 z"
+     id="path1" />
+</svg>

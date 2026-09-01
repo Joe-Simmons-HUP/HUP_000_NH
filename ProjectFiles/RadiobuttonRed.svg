@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16px"
+   height="16px"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="RadiobuttonRed.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="72.9375"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="16x16/Radiobutton_normal" />
+  <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title1">16x16/Radiobutton_normal</title>
+  <desc
+     id="desc1">Created with Sketch.</desc>
+  <defs
+     id="defs1" />
+  <g
+     id="icons-16x16"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="16x16/Radiobutton_normal"
+       fill="#7A7A7A">
+      <path
+         d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z M8,12 C10.209139,12 12,10.209139 12,8 C12,5.790861 10.209139,4 8,4 C5.790861,4 4,5.790861 4,8 C4,10.209139 5.790861,12 8,12 Z"
+         id="Radiobutton" />
+      <path
+         style="fill:#ff0000;stroke:#999999;stroke-width:0.0342759;stroke-linejoin:round"
+         d="M 7.6846615,11.981678 C 7.6620394,11.978565 7.5849186,11.969445 7.5132819,11.96141 6.9688932,11.900352 6.3646203,11.686792 5.888449,11.387167 4.8615509,10.741006 4.194341,9.6956125 4.0358153,8.4844363 c -0.031347,-0.2394992 -0.031347,-0.7293734 0,-0.9688726 C 4.2107244,6.1792144 5.0088321,5.043215 6.196834,4.439643 6.6262138,4.2214938 7.0892119,4.0845373 7.5836291,4.029424 7.8504032,3.999686 8.3203934,4.009539 8.5859344,4.050436 c 1.1371979,0.1751431 2.1236486,0.8074672 2.7524336,1.7643353 0.33523,0.510144 0.540551,1.0679803 0.625165,1.6985109 0.03282,0.2445383 0.03282,0.7288979 0,0.9734362 -0.08495,0.6330193 -0.292833,1.196177 -0.628815,1.7034516 -0.561495,0.847762 -1.3895314,1.43611 -2.3668573,1.681734 -0.3236707,0.08135 -0.5245347,0.105949 -0.906164,0.110993 -0.1847473,0.0024 -0.3544131,0.0019 -0.3770352,-0.0012 z"
+         id="path1" />
+    </g>
+  </g>
+</svg>

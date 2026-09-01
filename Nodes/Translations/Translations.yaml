@@ -1,0 +1,61 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [46,5],
+    "Body": [
+     "","en-US","es-ES","de-DE","zh-CN",
+     "Acked","Acked","","","",
+     "SourceName","Source Variable","","","",
+     "Timestamp","Timestamp","","","",
+     "Confirmed","Confirmed","","","",
+     "Name","Name","","","",
+     "Message","Message","","","",
+     "Active","Active","","","",
+     "Severity","Severity","","","",
+     "TimedShelve","Timed Shelve","","","",
+     "Acknowledge","Acknowledge","","","",
+     "Acknowledge All","Acknowledge All","","","",
+     "Confirm","Confirm","","","",
+     "OneShotShelve","One-Shot Shelve","","","",
+     "Confirm All","Confirm All","","","",
+     "DateAndTime","Date and time","","","",
+     "TimeSynchronizationMode","Synchronization mode","","","",
+     "TimeZone","Time zone","","","",
+     "AutoMode","Auto (Remote NTP server)","","","",
+     "LocalNTPServerInterfaces","Local NTP server interfaces","","","",
+     "Reboot","Reboot","","","",
+     "LAN","LAN","","","",
+     "WAN","WAN","","","",
+     "RebootToCommitChanges","Reboot to commit changes","","","",
+     "RemoteNTPServer","Remote NTP server","","","",
+     "PLCaddress","PLC address","","","",
+     "PLC","Auto (PLC)","","","",
+     "ManualMode","Manual","","","",
+     "ISAStyleSheetLabelsInteractiveDescription","Live data labels, toggle on/off labels","","","",
+     "ISAStyleSheetDisplayName","ISA Style Sheet","","","",
+     "ISAStyleSheetButtonsCommandDescription","A command button is typically used to execute a function or change of state in the controller","","","",
+     "ISAStyleSheetButtonsCurrentStateDescription","Button appearance when the device is already in the state which the button commands.","","","",
+     "ISAStyleSheetsEngineeringUnitsDescription","Engineering units, footnotes","","","",
+     "ISAStyleSheetButtonsNavigationDescription","Buttons to navigate between HMI displays or panels","","","",
+     "ISAStyleSheetLabelsLiveSecondary","Live data that is not the primary value","","","",
+     "ISAStyleSheetLabelsLivePrimary","Live data for the main piece of information on a display","","","",
+     "ISAStyleSheetCautionDescription","Caution phrases and important notifications","","","",
+     "ISAStyleSheetHeadingsDescription","Section headings, according headings","","","",
+     "ISAStyleSheetWarningStatesDescription","Warning states","","","",
+     "ISAStyleSheetsFaultStatesDescription","Fault states","","","",
+     "Binary state display with label (right).","Binary state display with label (right).","","","",
+     "Binary state display.","Binary state display.","","","",
+     "Instruction Backing Tag","Instruction Backing Tag","","","",
+     "Text description of indicator.","Text description of indicator.","","","",
+     "Indicator state. (0 = Inactive, 1 = Active)","Indicator state. (0 = Inactive, 1 = Active)","","","",
+     "Style to use when Inp_Active = True","Style to use when Inp_Active = True","","",""
+    ]
+   }

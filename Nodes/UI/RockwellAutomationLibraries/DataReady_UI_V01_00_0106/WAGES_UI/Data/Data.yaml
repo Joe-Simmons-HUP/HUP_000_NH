@@ -1,0 +1,22 @@
+Name: Data
+Type: FolderType
+Children:
+- Name: WAGESColors
+  Type: BaseObjectType
+  Children:
+  - Name: ConsBarColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#008000"
+  - Name: GenBarColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8e71c"
+  - Name: NetBarColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ff0000"
+  - Name: TotalLineColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#5470c6"

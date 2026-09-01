@@ -1,0 +1,57 @@
+Name: Retentivity
+Type: RetentivityCategoryFolder
+Children:
+- Name: DataReady
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Type: BaseObjectType
+    Children:
+    - Name: MachineModel_AssetID_CrntSet
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/Model/MachineModel/AssetID/CrntSet"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: MachineModel_OEE_CrntSet
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/Model/MachineModel/OEE/CrntSet"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: MachineModel_OEE_ReqSet
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/Model/MachineModel/OEE/ReqSet"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: MachineModel_WAGES_PwrMon_CrntSet
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/Model/MachineModel/WAGES_PwrMon/CrntSet"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: MachineModel_WAGES_PwrMon_ReqSet
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/HUP_000_NH/Model/MachineModel/WAGES_PwrMon/ReqSet"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+  - Name: WriteDelay
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty

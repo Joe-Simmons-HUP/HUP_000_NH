@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.44 56">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .1em;
+      }
+
+      .cls-2 {
+        letter-spacing: .09em;
+      }
+
+      .cls-3 {
+        font-family: SegoeUI-Bold, 'Segoe UI';
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #9b9b9b;
+      }
+
+      .cls-5 {
+        fill: #7e7e7e;
+      }
+
+      .cls-6 {
+        fill: #b8b8b8;
+      }
+
+      .cls-7 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-7, .cls-8 {
+        fill: none;
+        stroke: #9b9b9b;
+        stroke-width: 2px;
+      }
+
+      .cls-8 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-6" points="50.42 42.3 50.42 36.54 5.2 36.54 5.1 42.3 50.42 42.3"/>
+  <polygon class="cls-6" points="50.42 50.68 50.42 44.91 5.2 44.91 5.1 50.68 50.42 50.68"/>
+  <polygon class="cls-5" points="31.68 9.96 31.68 5.01 4.98 5.01 4.92 9.96 31.68 9.96"/>
+  <rect class="cls-8" x="1" y="1" width="53.44" height="54"/>
+  <text class="cls-3" transform="translate(9.92 33.66)"><tspan class="cls-1" x="0" y="0">D</tspan><tspan class="cls-2" x="7.54" y="0">C</tspan><tspan class="cls-1" x="13.94" y="0">OUT</tspan></text>
+  <g>
+    <path class="cls-8" d="m17.18,22.31c-.62.36-1.35.57-2.12.57-2.32,0-4.21-1.88-4.21-4.21s1.88-4.21,4.21-4.21c.77,0,1.49.21,2.12.57"/>
+    <line class="cls-8" x1="14.84" y1="18.77" x2="23.78" y2="18.77"/>
+    <polyline class="cls-7" points="20.72 21.48 23.48 18.72 20.94 16.18"/>
+  </g>
+  <path class="cls-4" d="m46.93,7.11c1.1,0,2,.9,2,2v10.13c0,1.1-.9,2-2,2h-8.55c-1.11,0-2-.9-2-2l.02-6.37h-.02l.02-3.77c0-1.1.9-1.99,2-1.99h8.54m0-2h-8.54c-2.19,0-3.99,1.79-4,3.98l-.02,3.77v2.01s.02,0,.02,0v4.36c-.01,1.07.4,2.08,1.16,2.83.76.76,1.76,1.18,2.83,1.18h8.55c2.21,0,4-1.79,4-4v-10.13c0-2.21-1.79-4-4-4h0Z"/>
+</svg>

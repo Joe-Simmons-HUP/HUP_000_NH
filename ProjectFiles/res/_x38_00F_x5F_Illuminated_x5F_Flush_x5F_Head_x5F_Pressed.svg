@@ -1,0 +1,13 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_lZ4Z1" x="0px" y="0px" width="97.455px" height="97.453px" viewBox="0 0 97.455 97.453" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="8.4004" y1="34.4072" x2="89.0488" y2="34.4072">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.45"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.45"/>
+  </linearGradient>
+  <path fill="url(#SVGID_12_)" d="M89.049,48.731c0,4.062-0.6,7.984-1.727,11.676c-0.588-1.939-1.314-6.235-2.176-7.831&#xD;&#xA;&#x9;&#x9;c-0.752-1.4-2.555-1.293-2.555-1.293s-1.61,2.67-2.134,2.146c-7.349-7.372-18.476-9.152-31.729-9.152&#xD;&#xA;&#x9;&#x9;c-13.272,0-24.411,1.785-31.756,9.171c-0.485,0.488-2.028-2.27-2.028-2.27s-1.863-0.048-2.643,1.394&#xD;&#xA;&#x9;&#x9;c-0.86,1.597-1.59,5.896-2.174,7.836C9,56.716,8.4,52.793,8.4,48.731c0-22.269,18.059-40.324,40.329-40.324&#xD;&#xA;&#x9;&#x9;C70.992,8.407,89.049,26.463,89.049,48.731z"/>
+  <radialGradient id="SVGID_13_" cx="48.7236" cy="48.7275" r="40.3213" gradientUnits="userSpaceOnUse">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.3"/>
+    <stop offset="0.8344" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.8"/>
+  </radialGradient>
+  <circle fill="url(#SVGID_13_)" cx="48.724" cy="48.729" r="40.323"/>
+</svg>

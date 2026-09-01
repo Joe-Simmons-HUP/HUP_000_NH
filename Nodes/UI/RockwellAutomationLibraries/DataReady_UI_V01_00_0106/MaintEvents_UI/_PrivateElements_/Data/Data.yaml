@@ -1,0 +1,95 @@
+Name: Data
+Type: FolderType
+Children:
+- Class: DataType
+  Name: MaintEventsInstances
+  Id: g=9a59c1f04fe172254dc95f87a2f27b64
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "MaintEventsInstances",
+    "DataType": {
+     "IdType": 2,
+     "Id": "9a59c1f04fe172254dc95f87a2f27b64",
+     "Namespace": 30
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0
+     },{
+      "Name": "Value1",
+      "Value": 1
+     },{
+      "Name": "Value2",
+      "Value": 2
+     },{
+      "Name": "Value3",
+      "Value": 3
+     },{
+      "Name": "Value4",
+      "Value": 4
+     },{
+      "Name": "Value5",
+      "Value": 5
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [1]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: MaintEventsInstancesConverter
+  Id: g=d07c393477a8f593886dc1627db9603c
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=7;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair0
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int16
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Not Used"
+- Name: MaintEventsNodeIDConverter
+  Id: g=335c9f5fde0f68ebc0b782b88ff55528
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=7;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair0
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int16
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/HUP_000_NH/raLib_Core/DataReady_Core_V01_00_0106/Global/Data/NotUsed_DoNotDelete"

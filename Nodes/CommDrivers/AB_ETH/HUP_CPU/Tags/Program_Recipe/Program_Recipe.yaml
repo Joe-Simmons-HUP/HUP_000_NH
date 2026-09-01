@@ -1,0 +1,21 @@
+Name: 'Program:Recipe'
+Type: FolderType
+Children:
+- Name: Valid
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [160]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Recipe.Valid"
+- Name: R1_P1_Offset_Pointer
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Recipe.R1_P1_Offset_Pointer"

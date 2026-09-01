@@ -1,0 +1,70 @@
+Name: Library
+Type: FolderType
+Children:
+- File: IODevice_v5R/IODevice_v5R.yaml
+- Name: SplashPanel
+  Id: g=88a0d2a463aa6ae045ee5665f378b85b
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1920.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1080.0
+  - Name: Delay
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:05.0000000"
+  - Name: SplashPanelLogic
+    Type: NetLogic
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Opacity
+    Type: BaseVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: NextPanel
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/HUP_000_NH/UI/Screens/Main_001"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional
+      Value: 1
+  - Name: ns=19;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    ModellingRule: None
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 19
+      },
+      "Body": {
+       "libraryGuid": "de905a58759b4ff38bbb66c9d44c67ad",
+       "objectGuid": "86b5118f3f18fe80b291ccdc448a5024",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

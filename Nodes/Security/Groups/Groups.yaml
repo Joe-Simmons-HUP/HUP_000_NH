@@ -1,0 +1,10 @@
+Name: Groups
+Id: g=33ac98afcbbcd645bc8146197074cc43
+Type: GroupsCategoryFolder
+Children:
+- Name: DR_Advanced
+  Id: g=f8ee8a15d6cf5028752a3230661e2909
+  Type: GroupType
+- Name: DR_Basic
+  Id: g=32d931e5010e4af5b4c448a21dc70e7d
+  Type: GroupType

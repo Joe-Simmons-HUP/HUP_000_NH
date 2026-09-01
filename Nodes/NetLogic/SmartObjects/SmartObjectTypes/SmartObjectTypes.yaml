@@ -1,0 +1,31 @@
+Name: SmartObjectTypes
+Type: FolderType
+Children:
+- Name: SmartObjectImporter
+  Id: g=6eb3c761d551e5fe6b2307a021e5f0f7
+  Supertype: BaseObjectType
+  Children:
+  - Name: ControllerFilePath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: SmartObjectsDesigntime
+    Type: NetLogic
+    Children:
+    - Name: BehaviourStartPriority
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Method
+      Name: ReadModels
+      Id: g=e8dbf28508a66a2cb596c7ec15dbd272
+    - Class: Method
+      Name: ImportSmartObjects
+      Id: g=65b92b86693ca891cd0acc6f9a31f727
+- Name: SmartObjectsRuntime
+  Type: NetLogic

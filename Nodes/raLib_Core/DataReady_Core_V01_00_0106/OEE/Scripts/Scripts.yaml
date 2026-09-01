@@ -1,0 +1,40 @@
+Name: Scripts
+Type: NetLogicCategoryFolder
+Children:
+- Name: OEEDatabaseLoader
+  Id: g=73193a50a73997235ae263a3ae7a8095
+  Type: NetLogic
+  Children:
+  - Name: DebugEnable
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Method
+    Name: DeleteOee
+  - Name: TargetTimeHorizon_Days
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 8.0
+  - Class: Method
+    Name: LimitOEEDBSize
+  - Name: CurrentTimeHorizon_Days
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentTableSize_MB
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: CurrentRowCount
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: MaxTableSize_MB
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: MaxRowCount
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: OEECalculations
+  Type: NetLogic
+- Name: BuildFilter
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: BuildWHEREString

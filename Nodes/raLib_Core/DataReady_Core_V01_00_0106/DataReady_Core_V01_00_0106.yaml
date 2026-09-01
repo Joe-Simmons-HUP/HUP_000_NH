@@ -1,0 +1,24 @@
+Name: DataReady_Core_V01_00_0106
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"DataReady Core V01.00.0106"}
+Children:
+- File: Global/Global.yaml
+- File: MaintEvents/MaintEvents.yaml
+- File: OEE/OEE.yaml
+- File: WAGES/WAGES.yaml
+- Name: ns=19;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 19
+    },
+    "Body": {
+     "libraryGuid": "ec94fb5c980f1534d6aa8059bdfd9df1",
+     "objectGuid": "863d48d0366f971a41c32464e1af6656",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }

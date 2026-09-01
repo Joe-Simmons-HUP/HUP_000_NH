@@ -1,0 +1,288 @@
+Name: Boolean
+Type: FolderType
+Children:
+- Name: tcSDK1_BSD_IndLbl_Horizontal
+  Id: g=f61ca16c96319588687617531a9eab11
+  Supertype: RowLayout
+  Description: {"NamespaceIndex":30,"TextId":"Binary state display with label (right)."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      Value: -1.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_LabelWidth"
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Wrap"
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"NamespaceIndex":30,"TextId":"Text description of indicator."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Inp_Active
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"NamespaceIndex":30,"TextId":"Indicator state. (0 = Inactive, 1 = Active)"}
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: BSD_Ind
+    Type: tcSDK1_BSD_Ind
+    Children:
+    - Name: Inp_Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Inp_Active"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+    - Name: Cfg_ActiveStyle
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Live Data"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_ActiveStyle"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Default"
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Inp_Active"
+        - Name: Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Cfg_ActiveStyle"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      Value: 16.0
+      Children:
+      - Name: ExpressionEvaluator2
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/StyleSheet/FontPixelSize"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      Value: 12.0
+      Children:
+      - Name: ExpressionEvaluator2
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/StyleSheet/FontPixelSize"
+  - Name: Cfg_ActiveStyle
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"NamespaceIndex":30,"TextId":"Style to use when Inp_Active = True"}
+    Value: "Live Data"
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: -1.0
+  - Name: HorizontalGap
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: Cfg_LabelWidth
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    Value: -1.0
+  - Name: Wrap
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+- Name: tcSDK1_BSD_Ind
+  Id: g=36581043ccedf731259b0988ba6c5e9f
+  Supertype: Rectangle
+  Description: {"NamespaceIndex":30,"TextId":"Binary state display."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    Value: 16.0
+    Children:
+    - Name: ExpressionEvaluator2
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "16*{0}/15"
+      - Name: ns=7;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/StyleSheet/FontPixelSize"
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    Value: 12.0
+    Children:
+    - Name: ExpressionEvaluator2
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "12*{0}/15"
+      - Name: ns=7;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/StyleSheet/FontPixelSize"
+  - Name: Inp_Active
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"NamespaceIndex":30,"TextId":"Indicator state. (0 = Inactive, 1 = Active)"}
+  - Name: Rotation
+    Type: BaseVariableType
+    DataType: Size
+  - Name: Cfg_ActiveStyle
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"NamespaceIndex":30,"TextId":"Style to use when Inp_Active = True"}
+    Value: "Live Data"
+  - Name: Style
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Default"
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "if({0},{1},\"Default\")"
+      - Name: ns=7;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Inp_Active"
+      - Name: ns=7;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_ActiveStyle"

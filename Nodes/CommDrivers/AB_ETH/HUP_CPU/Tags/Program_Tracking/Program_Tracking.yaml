@@ -1,0 +1,876 @@
+Name: 'Program:Tracking'
+Type: FolderType
+Children:
+- Name: Gocator_Y_FromCamera
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_Y_FromCamera"
+- Name: Alternate_Robot_ONS
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [32]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Alternate_Robot_ONS"
+- Name: Robot_Destination
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Robot_Destination"
+- Name: Vision_Capture_Acknowledged
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_Capture_Acknowledged"
+- Name: Vision_Capture_ONS
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_Capture_ONS"
+- Name: Tray_ID
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Tray_ID"
+- Name: Tray_Index
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Tray_Index"
+- Name: New_Vision_Data
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.New_Vision_Data"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Vision system sent a new set of coordinates"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.New_Vision_Data.@Description"
+- Name: Vision_Capture_Acknowledged_TimeOut
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_Capture_Acknowledged_TimeOut"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_Capture_Acknowledged_TimeOut.PRE"
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_Capture_Acknowledged_TimeOut.ACC"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_Capture_Acknowledged_TimeOut.EN"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_Capture_Acknowledged_TimeOut.TT"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_Capture_Acknowledged_TimeOut.DN"
+- Name: Vision_NumCaptures
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_NumCaptures"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Total number of visiuon system captures"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_NumCaptures.@Description"
+- Name: Vision_NumObjects
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_NumObjects"
+- Name: Vision_PositionData
+  Type: RAEtherNetIPTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [8]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_PositionData"
+  - Name: 0
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 1 X"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[0].@Description"
+  - Name: 1
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 1 Y"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[1].@Description"
+  - Name: 2
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 1 Z"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[2].@Description"
+  - Name: 3
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 1 R"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[3].@Description"
+  - Name: 4
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 2 X"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[4].@Description"
+  - Name: 5
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 2 Y"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[5].@Description"
+  - Name: 6
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 2 Z"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[6].@Description"
+  - Name: 7
+    Type: MetaTagArrayIndex
+    ReferenceType: HasTagChild
+    Children:
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Object 2 R"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.Vision_PositionData[7].@Description"
+- Name: Vision_PrevNumCaptures
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Vision_PrevNumCaptures"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Last saved number of vision system captures"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Vision_PrevNumCaptures.@Description"
+- Name: POS_Product_Insert_ROT
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Product_Insert_ROT"
+- Name: POS_Product_Insert_X
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Product_Insert_X"
+- Name: POS_Product_Insert_Y
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Product_Insert_Y"
+- Name: POS_Product_Insert_Z
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Product_Insert_Z"
+- Name: POS_Tray_Insert_ROT
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Tray_Insert_ROT"
+- Name: POS_Tray_Insert_X
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Tray_Insert_X"
+- Name: POS_Tray_Insert_Y
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Tray_Insert_Y"
+- Name: POS_Tray_Insert_Z
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.POS_Tray_Insert_Z"
+- Name: Product_ID
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Product_ID"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Tracking ID of part to be picked"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_ID.@Description"
+- Name: HMI_ProductDetection_Virtual
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.HMI_ProductDetection_Virtual"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "0 = PE or Vision\r\n1 = Virtual"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.HMI_ProductDetection_Virtual.@Description"
+- Name: JOG_Direction
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.JOG_Direction"
+- Name: Virtual_Product_Gap_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Virtual_Product_Gap_mm"
+- Name: CFG_Product
+  Type: UDT_Product_Item
+  DataType: UDT_Product_Item
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_Product"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Diameter
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.CFG_Product.Diameter"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Puck diameter (mm)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.CFG_Product.Diameter.@Description"
+  - Name: Height
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.CFG_Product.Height"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Puck height (mm)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Tracking.CFG_Product.Height.@Description"
+- Name: DOD_Test_ONS
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.DOD_Test_ONS"
+- Name: SENSOR_Product_Infeed
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.SENSOR_Product_Infeed"
+- Name: SENSOR_Tray_Infeed
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.SENSOR_Tray_Infeed"
+- Name: CFG_TrayPE_Pos_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_TrayPE_Pos_mm"
+- Name: CFG_ProductPE_Pos_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_ProductPE_Pos_mm"
+- Name: CFG_ProductConveyor_Z_Pos_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_ProductConveyor_Z_Pos_mm"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "8/24/2023\r\nSet to -1112 if not using camera for Z measurements"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.CFG_ProductConveyor_Z_Pos_mm.@Description"
+- Name: CFG_ProductConveyor_Y_Pos_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_ProductConveyor_Y_Pos_mm"
+- Name: CFG_TrayConveyor_Y_Pos_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_TrayConveyor_Y_Pos_mm"
+- Name: HMI_TrayDetection_Virtual
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.HMI_TrayDetection_Virtual"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Tray Detection Method:\r\n\r\n0 = PE\r\n1 = Generate Virtual\r\n"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.HMI_TrayDetection_Virtual.@Description"
+- Name: Virtual_Tray_Gap_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Virtual_Tray_Gap_mm"
+- Name: Ready_for_Tray_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Ready_for_Tray_mm"
+- Name: Zero
+  Type: RAEtherNetIPTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Zero"
+- Name: Ready_for_Product_mm
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Ready_for_Product_mm"
+- Name: ABQE_Step
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.ABQE_Step"
+- Name: Channel_Axis_CC
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Channel_Axis_CC"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Conversion Constant of channel axis"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Channel_Axis_CC.@Description"
+- Name: mm_per_VirtualEncoderRev
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.mm_per_VirtualEncoderRev"
+- Name: Application_Axis_CC
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Application_Axis_CC"
+- Name: ABQE_Enabled
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.ABQE_Enabled"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "ABQE is enabled and working"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.ABQE_Enabled.@Description"
+- Name: Index_X
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Index_X"
+- Name: Index_Y
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Index_Y"
+- Name: patternIndex
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.patternIndex"
+- Name: arraySize
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.arraySize"
+- Name: clearRemainingIndex
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.clearRemainingIndex"
+- Name: ER
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.ER"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Error"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.ER.@Description"
+- Name: Gocator_X_FromCamera
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_X_FromCamera"
+- Name: ERR
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.ERR"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Error Code"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.ERR.@Description"
+- Name: Gocator_Rotation_FromCamera
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_Rotation_FromCamera"
+- Name: Gocator_X_Previous
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_X_Previous"
+- Name: DOD_Gocator_Angle
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.DOD_Gocator_Angle"
+- Name: Gocator_Rotation_Previous
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_Rotation_Previous"
+- Name: Gocator_Y_Previous
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_Y_Previous"
+- Name: CFG_AlternateRobots
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_AlternateRobots"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Alternate destination robot between 1 & 2"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.CFG_AlternateRobots.@Description"
+- Name: CFG_FixedRobotDestination
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.CFG_FixedRobotDestination"
+- Name: DOD_CompensateForRotationError_X
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.DOD_CompensateForRotationError_X"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Compensate for error that grows with rotation angle"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.DOD_CompensateForRotationError_X.@Description"
+- Name: Gocator_Z_FromCamera
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_Z_FromCamera"
+- Name: Gocator_Z_Previous
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Gocator_Z_Previous"
+- Name: Product_Counter
+  Type: COUNTER
+  DataType: COUNTER
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Tracking.Product_Counter"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.PRE"
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.ACC"
+  - Name: CU
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.CU"
+  - Name: CD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.CD"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.DN"
+  - Name: OV
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.OV"
+  - Name: UN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Tracking.Product_Counter.UN"

@@ -1,0 +1,222 @@
+Name: Databases
+Type: DataStoresCategoryFolder
+Children:
+- Name: MaintEventsDatabase
+  Id: g=ecaa15c2b97a8149daaa33ae11a1ac29
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: raI_01_00_0106_MaintEvents
+      Id: g=df5857dd25444038bc2fc9143e85d762
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: StartTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: MachineGuid
+          Type: StoreColumn
+          DataType: String
+        - Name: InstanceName
+          Type: StoreColumn
+          DataType: String
+        - Name: AssetID
+          Type: StoreColumn
+          DataType: String
+        - Name: EventID
+          Type: StoreColumn
+          DataType: String
+        - Name: Code
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Category
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Duration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Description
+          Type: StoreColumn
+          DataType: Int32
+        - Name: ContextVar1
+          Type: StoreColumn
+          DataType: String
+        - Name: ContextVar2
+          Type: StoreColumn
+          DataType: String
+        - Name: ContextVar3
+          Type: StoreColumn
+          DataType: String
+        - Name: ContextVar4
+          Type: StoreColumn
+          DataType: String
+        - Name: SeverityColor
+          Type: StoreColumn
+          DataType: String
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
+    - Name: MaintEvents_UI
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: StartTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: MachineGuid
+          Type: StoreColumn
+          DataType: String
+        - Name: InstanceName
+          Type: StoreColumn
+          DataType: String
+        - Name: AssetID
+          Type: StoreColumn
+          DataType: String
+        - Name: EventID
+          Type: StoreColumn
+          DataType: String
+        - Name: Code
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: Category
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: Duration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Description
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: ContextVar1
+          Type: StoreColumn
+          DataType: String
+        - Name: ContextVar2
+          Type: StoreColumn
+          DataType: String
+        - Name: ContextVar3
+          Type: StoreColumn
+          DataType: String
+        - Name: ContextVar4
+          Type: StoreColumn
+          DataType: String
+        - Name: SeverityEnum
+          Type: StoreColumn
+          DataType: Int32
+        - Name: SeverityColor
+          Type: StoreColumn
+          DataType: String
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
+  - Class: Reference
+    Target: ns=27;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=15;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=59
+    Direction: Forward
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "raI_01_00_0106_MaintEvents_DBFile"
+  - Class: Reference
+    Target: ns=15;i=67
+    Direction: Forward

@@ -1,0 +1,51 @@
+Name: CommandButtons
+Type: FolderType
+Children:
+- Name: tcSDK1a_Btn_Momentary_Lbl
+  Id: g=14670c48d498430dd3ecd0e8699e9c0e
+  Supertype: MomentaryButton
+  Description: {"LocaleId":"en-US","Text":"Momentary button with label: Press value = 1, Release value = 0."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 128.0
+  - Name: Ref_Variable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Variable or tag assigned to the button."}
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Button text."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Active
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Ref_Variable"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Style
+    Type: BaseDataVariableType
+    DataType: String
+    ModellingRule: Optional
+    Value: "Command"
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 56.0

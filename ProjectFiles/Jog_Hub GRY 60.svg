@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   viewBox="0 0 44.10247 47.61"
+   id="svg1"
+   sodipodi:docname="Jog_Hub GRY 60.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   width="44.10247"
+   height="47.610001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="24.511657"
+     inkscape:cx="22.050733"
+     inkscape:cy="23.805"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1"
+     showgrid="false" />
+  <g
+     id="g5"
+     transform="translate(10.307867,11.9025)">
+    <path
+       style="fill:#808080;stroke-width:2.44949"
+       d="m 14.614367,35.7075 v -47.61 H 8.8723674 v 47.61 H 14.614367 8.8723674"
+       id="path3"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#808080;stroke-width:2.44949"
+       d="M -7.4368676,26.291359 33.794602,2.4863588 l -2.871,-4.9727176 -41.231469,23.8049998 2.8709994,4.972718 -2.8709994,-4.972718"
+       id="path4"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#808080;stroke-width:2.44949"
+       d="M 33.794602,21.318641 -7.4368676,-2.4863588 -10.307867,2.4863588 30.923602,26.291359 l 2.871,-4.972718 -2.871,4.972718"
+       id="path5"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+</svg>

@@ -1,0 +1,2814 @@
+Name: Model
+Id: g=e3129ab1c6428b33491fb9cd66309d16
+Type: ModelCategoryFolder
+Children:
+- Name: ScreenId
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1
+- Name: Alarm_Trigger
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [1024]
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/MSG/Trigger"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: State_MSG
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [18]
+  Value: ["ABORTING","ABORTED","CLEARING","STOPPED","RESETTING","STARTING","EXECUTE","COMPLETING","SUSPENDING","STOPPING","HELD","SUSPENDED","COMPLETE","IDLE","HOLDING","UNSUSPENDING","UNHOLDING","0"]
+- Name: Mode_MSG
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Value: ["RESETTING ONLY","EXECUTE","PURGE","SINGLE CYCLE","STEP CYCLE","0","0","0","0","0"]
+- Name: Security_MSG
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Value: ["OPERATOR","SETUP","SUPERVISOR","ENGINEER","***HUP***","0","0","0","0","0"]
+- Name: Station_MSG
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+  Value: ["STATION HELD","STATION NOT HOME","STATION INTERLOCKED","STATION IDLE","STATION RESETTING","STATION EXECUTE","STATION SUSPENDED","STATION SPARE STATUS","STATION SPARE STATUS","STATION SPARE STATUS"]
+- Name: TargetIP
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: ["192.168.1.69","192.168.1.71","192.168.1.69","127.0.0.1"]
+- File: Imported_Objects/Imported_Objects.yaml
+- Name: MachineModel
+  Type: SmartObjectNode
+  Children:
+  - Name: Symbol name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DataReady/DataReady:MachineModel_Parent"
+  - Name: Info Attributes
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: raI_Tec_Function
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "raI_01_00_0106_Level2_0"
+  - Name: AssetID
+    Type: SmartObjectNode
+    Children:
+    - Name: Symbol name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataReady/DataReady:AssetID_SO.AssetID_Parent"
+    - Name: Info Attributes
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: raI_Tec_Function
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raI_01_00_0106_AssetID"
+    - Name: CrntSet
+      Id: g=0d340928bc654c1d0d722f34a5fc3af8
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Id: g=6c7863b5e80143d5407393e9a43e2858
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:AssetID_SO.ParentCrntSet"
+      - Name: Info Attributes
+        Id: g=3e0cd330815e1a623d60eb61075d5081
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: UserLatitude
+        Id: g=eb6d2d13a9cc2cd9e923a7549bf94d94
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=8b1a9f555db321af01c7872c4da216e3
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserLatitudeCrntSet"
+        - Name: Info Attributes
+          Id: g=23d8a66a805475b22db509c14cfb5ad6
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserLongitude
+        Id: g=f36de4a0f9fadeb1c0bf37e975b96770
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=ddc92bf39d48da6a5c8712c289060af4
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserLongitudeCrntSet"
+        - Name: Info Attributes
+          Id: g=b7bdb90c1ac80b94e36bcec561698643
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserContactName
+        Id: g=62ac45279e1ee3a0f32ef464136eae3a
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=63cb6202abea31a64a4e8c1fe84ddcf9
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserContactNameCrntSet"
+        - Name: Info Attributes
+          Id: g=3cb91cb7f25a5fcc73cfa630f16258de
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserContactPhone
+        Id: g=51c975c65e4cd2525a04b1c316754f86
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=184eb39aebcdc38261a63b06dd53d8df
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserContactPhoneCrntSet"
+        - Name: Info Attributes
+          Id: g=fee4963e976a2724c03ef0e4f9499395
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserContactEmail
+        Id: g=40d8538e85080860c5831678df99e6f9
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=b1525287107d04451b080da50597b5da
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserContactEmailCrntSet"
+        - Name: Info Attributes
+          Id: g=797ce7530e89002f506444bab0a97200
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetCategory
+        Id: g=7f996694b7126e0aa53e11bee2994814
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=7622fcfaf1babff917e8b816116e0a52
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetCategoryCrntSet"
+        - Name: Info Attributes
+          Id: g=727106352cf16e9e5204a953e25f17a1
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserUnifiedNameSpaceID
+        Id: g=bd425dab57f90bf358fa6209a69e0778
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=60c6eb6a6ad2ccbe79a946617298b061
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserUnifiedNameSpaceIDCrntSet"
+        - Name: Info Attributes
+          Id: g=a5ff7de027132df13cf47524b001fd59
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetName
+        Id: g=11f0a3b867b7d36b0c899ac5ca38a5e1
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=0b312caa1469a205eee74cd44de8586d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetNameCrntSet"
+        - Name: Info Attributes
+          Id: g=039727a30fb4a0efe8a29dce8102cc7c
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetID1
+        Id: g=d86c8b83afbad58eea98cb6542871ede
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=cb811e6c593f4131d4729a7d19bb6cb9
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetID1CrntSet"
+        - Name: Info Attributes
+          Id: g=f5e7628bcfbb2d4cc154ff94d0aed1b6
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetID2
+        Id: g=81b52f1a7fc65928a466eaae46940dbd
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=ab45750284f6ed76a73440f92424a6cd
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetID2CrntSet"
+        - Name: Info Attributes
+          Id: g=2090ce03eda3610ed8ca88f6efa92ad7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetID3
+        Id: g=5b742c3340a71b12629de8ecaffeb48d
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=155ef4abc261f477530bfdb8b1fcbafb
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetID3CrntSet"
+        - Name: Info Attributes
+          Id: g=de86917c878f8ed6818f387c064d50e7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetID4
+        Id: g=7f167a3db16c9225c13253bd6776c949
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=4f11d1097f5e1ec6867ed5a86a6b5502
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetID4CrntSet"
+        - Name: Info Attributes
+          Id: g=d7fe73423b6dc3dc95a318649b608645
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetIDLabel1
+        Id: g=eee60830ebbe2982d49bcfcc71b954dd
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=1330511dbf71633384d736f0e5fddb7c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetIDLabel1CrntSet"
+        - Name: Info Attributes
+          Id: g=8f88deff8605575f5b8bed818dc57cd0
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetIDLabel2
+        Id: g=026038edcaf88edc5f618f8ee1146b5e
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=730be5072e089b9030f033e35527f32e
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetIDLabel2CrntSet"
+        - Name: Info Attributes
+          Id: g=27b3e6084def6dc95cff769789f0597d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetIDLabel3
+        Id: g=9f09964aadaeb935bcf1aa3cc74e79e8
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=aae2bffb2fde3acf43749d39645e35d1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetIDLabel3CrntSet"
+        - Name: Info Attributes
+          Id: g=be926e7661a38d13f89aa320e6d036a0
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAssetIDLabel4
+        Id: g=3a7291e2245e2fdbf247820f673eccc5
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=699b5b3dceb2816bad0295f5e03ada51
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAssetIDLabel4CrntSet"
+        - Name: Info Attributes
+          Id: g=466e48c320a485a1877f60d2bddcf6f7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMName
+        Id: g=fcc79d24e4208136c004ffc75e860b97
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=73c21bd7b050ac9e2967f992fd4d2a80
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMNameCrntSet"
+        - Name: Info Attributes
+          Id: g=1e2c4292cda52458d6d2b93f26e83497
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMBusinessUnit
+        Id: g=cc77c866f557ec3f70f2a46b29c71da3
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=64782bd97ac99e716e900d998124944e
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMBusinessUnitCrntSet"
+        - Name: Info Attributes
+          Id: g=c6f8d0b6038997cbb8aa283e72e092d4
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMBusinessUnitSub1
+        Id: g=7e912e40009575d28e24cbaaaa829097
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=44ba0892653f401b4c73b48295beb3a1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMBusinessUnitSub1CrntSet"
+        - Name: Info Attributes
+          Id: g=b96809388fc1337bb6985d1f1c3951e3
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMBusinessUnitSub2
+        Id: g=903556140fbc9e81cd4ee2cb50d4dde3
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=f2ee32253cec2b7d753256ff70ceffe3
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMBusinessUnitSub2CrntSet"
+        - Name: Info Attributes
+          Id: g=742311f083afacf81449e23864aaacd7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMPhone
+        Id: g=31cdc466180b3a30c186edcb81b63583
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=8b3a1a4e9b1e68d3f61d97fa7092f46a
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMPhoneCrntSet"
+        - Name: Info Attributes
+          Id: g=6edb5ab6f3b81405692dc304ed77d937
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMEmail
+        Id: g=aa2bfa281fcd897953fcf25089b15bad
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=bec4daef695bf9917bcfa02a763c6ed7
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMEmailCrntSet"
+        - Name: Info Attributes
+          Id: g=6ac0d57b538914042e53f1ad91a91387
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMWebsite
+        Id: g=f78292c00e972bc1f746fe1580792780
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=35d6964d365e0aee5e28c0404bf2dd86
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMWebsite"
+        - Name: Info Attributes
+          Id: g=a4c47b624d90067293d3172aac2d2876
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMSerialNo
+        Id: g=8d25472c8585faa5b86d96910c0d47a5
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=f38f7e55bfe185dd457af29369bc97b5
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMSerialNoCrntSet"
+        - Name: Info Attributes
+          Id: g=6d7dcc01b5b74bb1fed713a97b4474bd
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMModel
+        Id: g=ee6be3459a4be28ed2f0eeb526b275e9
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=e30d5a3e8467eba78dbba7d370068a54
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMModelCrntSet"
+        - Name: Info Attributes
+          Id: g=7db9de7cf14ae5469324cb10de369828
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMModelCategory
+        Id: g=20d9ccf2a24febc578789bf305a29633
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=2ef94c81e10a46f581a0febc1a57d9f5
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMModelCategoryCrntSet"
+        - Name: Info Attributes
+          Id: g=b50af94e9b2dadabd632cea6f1154184
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMModelSubCategory
+        Id: g=4035e14cb01fab7351a268ec40c43de4
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=7071ce8f8ecbc8861ab06309e9ebbdf9
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMModelSubCategoryCrntSet"
+        - Name: Info Attributes
+          Id: g=feaa9a0e4424d328417c709cb3b68d1e
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ServiceStartDate
+        Id: g=aa66a4eeb56452776a64b7b4563d696c
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=ba7618c1e4ed23e4073571041933a925
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ServiceStartDateCrntSet"
+        - Name: Info Attributes
+          Id: g=aab98e4618871fcfd8c86dc6ddfd528e
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEMSoftwareVersion
+        Id: g=fe7659fac71b09997ca1137326476939
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=c8ee63d5fe884fa99e5a50332ceecf97
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_OEMSoftwareVersionCrntSet"
+        - Name: Info Attributes
+          Id: g=c1ab24447f7d99dd352d83bff0de276f
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar1
+        Id: g=28187a83cdfa0e7f2b9005d9afa383f7
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=e29b129c6e860a58e023b63d0484d135
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVar1CrntSet"
+        - Name: Info Attributes
+          Id: g=d93a9d5d1166663a7b3154fe091c783d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar2
+        Id: g=5ec0b112e77a96bbc89ce61fd8169bbf
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=1f359b842fef7db21b1780da9a3d24cd
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.So_ContextVar2CrntSet"
+        - Name: Info Attributes
+          Id: g=e1c093a3fa353d6d29f560bfa2422361
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar3
+        Id: g=0e3908f1461ba18b431a619a648f2121
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=ccc15b2cdec5878a95c2dbabc388bec8
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVar3CrntSet"
+        - Name: Info Attributes
+          Id: g=06c56f52ea7b915f8c8cfb59666ae575
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar4
+        Id: g=2bbe6c3e73406ed9625c389e0b1556d9
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=661c69f95b10f5cbe2b8dac5383f685c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVar4CrntSet"
+        - Name: Info Attributes
+          Id: g=1972bf8bc2c20b68407b556a45376a94
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel1
+        Id: g=b6b00cdf71a0b91c187d20783de280df
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=e4622cd2cb76084e1d077d8bf3e2e1d1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVarLabel1CrntSet"
+        - Name: Info Attributes
+          Id: g=235cf253abd53f1c3774ffcc687ee7e7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel2
+        Id: g=b39eceb1a35bc1ad4d87b6839704ce10
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=896ace39ab36765bbf10e8aa45945841
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVarLabel2CrntSet"
+        - Name: Info Attributes
+          Id: g=54fa99877243ea3ad45988f4d5068f02
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel3
+        Id: g=ed95e3253278581566e37f3cae3d1afb
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=baad10e9d5b6b626b57cffe6eb5ffc6a
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVarLabel3CrntSet"
+        - Name: Info Attributes
+          Id: g=c41b05281407b7090ccd422d37f7f802
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel4
+        Id: g=f70c75dc919371c40b2b98b56bf87ad7
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=d5618688d4f788cf264397c6c4421a5e
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ContextVarLabel4CrntSet"
+        - Name: Info Attributes
+          Id: g=ad2473a48824be93f00457868b035074
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserName
+        Id: g=19777b9701d14772a4f86ec607a4802c
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=103e5319603b1f54114741e5bc215720
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserNameCrntSet"
+        - Name: Info Attributes
+          Id: g=ca1aeffb591541604f7c2b1182472515
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserAddress
+        Id: g=7552ac01ff0fd4751576e9b1bfd0b1e9
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=a4bf9bd8043f65dd9eb989c297495af1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserAddressCrntSet"
+        - Name: Info Attributes
+          Id: g=58755158a7dd03391694d5371f5c2f5b
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserLocation
+        Id: g=c92e7838e65d74fd05d6f58f81fc431d
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=85233148ed5e3537ff15e7643bdffa0d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserLocationCrntSet"
+        - Name: Info Attributes
+          Id: g=6d770289cd365291daa088b91580a194
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserLocationSub1
+        Id: g=1e4defba89a63a9a261a3350b2aad603
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=197786dd8bdfeb315ef3a62740508be1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_UserLocationSub1CrntSet"
+        - Name: Info Attributes
+          Id: g=2c83c8b6dfaf513ef532d0c9d77ed0ce
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UserLocationSub2
+        Id: g=a7688ddd726f75726539de78f3979856
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=1a292a264033fec26d3a2aa174024cae
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.So_UserLocationSub2CrntSet"
+        - Name: Info Attributes
+          Id: g=a2f5351709d68a73ca1e74f48fc1e7ed
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: AOIInfo
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:AssetID_SO.ParentAOIInfo"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AOIInfoSts
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_AOIInfoSts"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: InstanceName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_InstanceName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RoutineName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_RoutineName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ProgramName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_ProgramName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Type
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_Type"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Library
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_Library"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Revision
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:AssetID_SO.SO_Revision"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+  - Name: OEE
+    Type: SmartObjectNode
+    Children:
+    - Name: Symbol name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataReady/DataReady:OEE_SO.OEE_Parent"
+    - Name: Info Attributes
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: raI_Tec_Function
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raI_01_00_0106_OEE"
+    - Name: ReqSet
+      Id: g=37656e1c66aa66387104f0ceee5e546a
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Id: g=eae4a9e487396f863561085d22612021
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:OEE_SO.ParentReqSet"
+      - Name: Info Attributes
+        Id: g=fa1077f3bcd012cdcd6ad040b4b710e7
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AssetID
+        Id: g=df12cc3be8839b6087018a46cd58d2fa
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=7e5a30bc4fe1c32bdc6fb96ae34040d8
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AssetIDReqSet"
+        - Name: FQN
+          Id: g=4fb77927c78bc1260e4b6cbb65170aa8
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.AssetID"
+        - Name: Info Attributes
+          Id: g=908270c102bb0649afac334dbcae2f60
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ShiftID
+        Id: g=295fb46f0f48bea3a9b3edce75855615
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=823e35be4c6a80cdd5e87a7ce8b35c58
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ShiftIDReqSet"
+        - Name: FQN
+          Id: g=1cd68fdedf5005547455b3af089cf036
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ShiftID"
+        - Name: Info Attributes
+          Id: g=a8999ace81fe146af5bbe0bac0a44dc1
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ProductID
+        Id: g=589f02232075853abe69bcfc53d57a6f
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=db6e73fc6b0e3e64846b170c679eec21
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ProductIDReqSet"
+        - Name: FQN
+          Id: g=9c2df8b4aea6c30960cc0b7a45401c04
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ProductID"
+        - Name: Info Attributes
+          Id: g=ffb129166922051fd5738fed8d1b1f1c
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OrderID
+        Id: g=643fbb0e6e788e050ce89dd3451433ac
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=525fd265873629e3c94448e740c15e7a
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OrderIDReqSet"
+        - Name: FQN
+          Id: g=5f8d9d03093e091ef0360b191131cd3c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.OrderID"
+        - Name: Info Attributes
+          Id: g=3689ac5db400f6e856ce3644f8235e2d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OperatorID
+        Id: g=2a68ee72759556d170b8964bc15b128b
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=712c64fd2445b9650156ee955445b183
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OperatorIDReqSet"
+        - Name: FQN
+          Id: g=82fccfdc2001a087cea45370e47f8b4c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.OperatorID"
+        - Name: Info Attributes
+          Id: g=061c68dfc93bf24bc9896c1d63c1930d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ScheduledStatus
+        Id: g=f0e28f4f1dff9301abea50d53525e144
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=f86f891b28c86f6385b6e51f3f8bfa85
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ScheduledStatusReqSet"
+        - Name: FQN
+          Id: g=1822bc5b000ab806344be072dc10aec0
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ScheduledStatus"
+        - Name: Info Attributes
+          Id: g=a2e9c0e2ff76168915019db3cf2c267e
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: IdealCycleTime
+        Id: g=9180d693387b11968067a073e456d11f
+        Type: SmartObjectWritableTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=94cee25c35ab2900802c1f4d217d62e3
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_IdealCycleTimeReqSet"
+        - Name: FQN
+          Id: g=5d733d03230cece5922c6e0717a4c5b3
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.IdealCycleTime"
+        - Name: Info Attributes
+          Id: g=0e4a12a57943a5fdd46f8855df85314f
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar1
+        Id: g=57f9c7a5b36e253433b2d3a65a3fbce4
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=cdcc8589d72c362686e0e6f6e2a147a4
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar1ReqSet"
+        - Name: FQN
+          Id: g=1e951a1ac38fa0a0e25111678d287471
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVar1"
+        - Name: Info Attributes
+          Id: g=75911f3c63f3cd638b43d44515fe15f7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar2
+        Id: g=19ef5c55713f47151f1aeb0149fb3b2c
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=7d64b8dc7afac5495e945a419a35bdf6
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar2ReqSet"
+        - Name: FQN
+          Id: g=51bca5eccdb1d01d4398a96739ae1c98
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVar2"
+        - Name: Info Attributes
+          Id: g=ca9e422ce90f30eab11fdaa143292263
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar3
+        Id: g=4f45f5247cac49b6a4f45ffc510cfe1c
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=68413b5a382d36c9a6cd4fac23c1d712
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar3ReqSet"
+        - Name: FQN
+          Id: g=768553a9599d7091d353baa025102edb
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVar3"
+        - Name: Info Attributes
+          Id: g=9918f3d9816dbbb022cb020113006a30
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar4
+        Id: g=aaa60cbe7058a2a16b8a341fd1ab47b2
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=31357cbfc66e1baf8b6599a5d820b4b4
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar4ReqSet"
+        - Name: FQN
+          Id: g=15751d78a0d42bc39c80f7f4517f0ab4
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVar4"
+        - Name: Info Attributes
+          Id: g=f48daf84447120b8c3674150a177ebc9
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UnitRatio
+        Id: g=d82792ef6c1016eabd2e184c50840126
+        Type: SmartObjectWritableTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=7c2e04325f823951164207f6fbe4ab34
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_UnitRatioReqSet"
+        - Name: FQN
+          Id: g=278fd157d4fa9f685780724f3d071e20
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.UnitRatio"
+        - Name: Info Attributes
+          Id: g=e801c3a42e227c76dfee8cc3b159f9e7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEETarget
+        Id: g=fc8dab3c4b1690c6a6f2f3db93278067
+        Type: SmartObjectWritableTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=28040c753a57da7b5e4c7345503d4a63
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OEETargetReqSet"
+        - Name: FQN
+          Id: g=bb86d3eea39bb82d73b7820843e0d5ce
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.OEETarget"
+        - Name: Info Attributes
+          Id: g=56a30ff2bd8ecff236831984886c0916
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AvailTarget
+        Id: g=062838b47dde6b7028394e9b9fd73b50
+        Type: SmartObjectWritableTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=b7cef8681b6b393c0cc230bb5e2620ae
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AvailTargetReqSet"
+        - Name: FQN
+          Id: g=91bd1da01cb718fcc328a2823559c69b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.AvailTarget"
+        - Name: Info Attributes
+          Id: g=81f7b3ca5415e196b0c4a4d903e9f47d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: PerfTarget
+        Id: g=c9879d264595a19ee408a827e2fed642
+        Type: SmartObjectWritableTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=9725ee8e5e276955d4fae65cc5c70bea
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_PerfTargetReqSet"
+        - Name: FQN
+          Id: g=6212eb693434ff0e8af3e9502b965d5c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.PerfTarget"
+        - Name: Info Attributes
+          Id: g=7c0b678cacc384c0b9a1970af236694d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: QualTarget
+        Id: g=928a0dc70ea594b91e7237cd1a8ddd32
+        Type: SmartObjectWritableTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=1fbb5dc64585161985de26314c27d6cf
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_QualTargetReqSet"
+        - Name: FQN
+          Id: g=da6d2115fbb841ad0912b4be508e0675
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.QualTarget"
+        - Name: Info Attributes
+          Id: g=858369b2e5289927b6cfe63840097601
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel1
+        Id: g=a1d2a64f279f6c989397976d5281b0a8
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=f20321924a8c9169c3d50697fe4a4cc1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVarLabel1ReqSet"
+        - Name: FQN
+          Id: g=31c6453c1b9d27a798db93c93188b969
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVarLabel1"
+        - Name: Info Attributes
+          Id: g=c53df14c762348b8fbd76b27418b5e78
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel2
+        Id: g=211e8a262b005dc8f47b87491463bed7
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=e6572321b47f09629596b2e305496913
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVarLabel2ReqSet"
+        - Name: FQN
+          Id: g=a3cb02c3fc7dff9fa6cdd57bc6a92d07
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVarLabel2"
+        - Name: Info Attributes
+          Id: g=c613fd72f69efb3c8ab600fa77833d77
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel3
+        Id: g=c9b9681252895882973f40ab3943c999
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=cc5dbfc4a31d2e70fa4e664c7b6cc14b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVarLabel3ReqSet"
+        - Name: FQN
+          Id: g=2481f5ecaf9a1bbdea8ef130d0ccf773
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVarLabel3"
+        - Name: Info Attributes
+          Id: g=bb501955aab2a91af0ec78418a163c43
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel4
+        Id: g=95cee965042812b92f37507b21d01f10
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=b38040f8106f5274b5b90373d361ae1d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVarLabel4ReqSet"
+        - Name: FQN
+          Id: g=90ba29418830f409f8810a052444d021
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.ContextVarLabel4"
+        - Name: Info Attributes
+          Id: g=1ebd60b3f860e4d3c0f68e43ec32bbeb
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel1
+        Id: g=4511db04487ee03700a4a814bd1e648d
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=57a0b4655420df7c2e217d5dbb137b7d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCountLabel1ReqSet"
+        - Name: FQN
+          Id: g=262909f54d48d71f514cd5d75292c848
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.RejectCountLabel1"
+        - Name: Info Attributes
+          Id: g=ec5ef615579865c7ccda12f61efe5f1c
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel2
+        Id: g=ef4d6e2ad68c3cdf45c4e03d5c7afcf6
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=11e02dfac4a566628817f3796cfe3e10
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCountLabel2ReqSet"
+        - Name: FQN
+          Id: g=e5868b42e298754ae93b397c661aac83
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.RejectCountLabel2"
+        - Name: Info Attributes
+          Id: g=dc6e4a430433e07731f679db8ec3c121
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel3
+        Id: g=27c9906a7679867fbed033f2a8a8284a
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=fc2665e520375e9553f7fdcef3746cb6
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCountLabel3ReqSet"
+        - Name: FQN
+          Id: g=7cf75869a3f60d4f0033e79cef63a3c8
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.RejectCountLabel3"
+        - Name: Info Attributes
+          Id: g=c76462397809c5847e54ec34d4c287d3
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel4
+        Id: g=67367f755261eb6c6172cbb61ad81b8d
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=39d8b934cbfe7f0a83781b62ba99056a
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCountLabel4ReqSet"
+        - Name: FQN
+          Id: g=ca834a3e7df141c1514306ef4ab67a8d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.ReqSet.RejectCountLabel4"
+        - Name: Info Attributes
+          Id: g=4fb9e96adadb806307724924933947ee
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: CrntSet
+      Id: g=73fbc7bf49ecf33fdb5d3315c143ffbb
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Id: g=c4209e431227817cbd4df5578ffbf368
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:OEE_SO.ParentCrntSet"
+      - Name: Info Attributes
+        Id: g=7acb9b662f5c6b84e075b8cea3cf8367
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: ContextVarLabel1
+        Id: g=13176d4cb2324038fb67c203f036af69
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=4977a6b93c81b9cd51c327251f46a2b8
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar1LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=f51f33ff67d9429b0dd85f79f554ef6c
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel2
+        Id: g=883e5128802ba5680a1f2e51570e3cff
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=d9e6d50fb8560717462f3a627e0fa5ab
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar2LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=44ca30ceadd45fb77c6c3d987cd32a48
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel3
+        Id: g=f2d5f7ff3c5ac89e328c37350c8d76c0
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=473fedf6f7d030ed2e490f37425dad5b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar3LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=dd1e9cb7cfb7de09a39304ad3b07f3f7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVarLabel4
+        Id: g=ea36dd2d42bb566855a48c919339d028
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=d534692e2c01394bd4e8124163f1cb97
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar4LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=3e9ddd2f4035087a90e2d59c98f1d8a6
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel1
+        Id: g=b2c998c68a5e2276c74fe5d9ed8eeaa5
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=03bedc7b81fe1c2e0addb86f08e89d25
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount1LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=57f487109004b4d579a876146afa8a07
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel2
+        Id: g=dcabdf6e0b9f337d8d5602dbe9e02dea
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=49eb096666207e2848f785db38fbb573
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount2LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=2cd336b5d2ad6d6882278448d169bb92
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel3
+        Id: g=bb50aac3f63d9e972ff929e515efc6bd
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=2509175720b8304dd1157ba240e438ff
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount3LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=7ed43903f489db1c222de423770c72b9
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCountLabel4
+        Id: g=028d2f571ecae104dcff25032ebc932f
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=7faf13609db8488e0775cf3bf18d57a2
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount4LabelCrntSet"
+        - Name: Info Attributes
+          Id: g=9aafa41cd22538771b95bb6fabe18665
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AssetID
+        Id: g=8a7e6887d81884a22636e5322431ee2e
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=5ab3304203648fc08a50e68972e9e211
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AssetIDCrntSet"
+        - Name: Info Attributes
+          Id: g=eb451f14317a7a7e39b3f2773f71be55
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ScheduledStatus
+        Id: g=1ba894a6f597008559ea07fbadebc985
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=25bde81cad3a9cc43fd7e20adda94ae6
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ScheduledStatusCrntSet"
+        - Name: Info Attributes
+          Id: g=4a60be93d109b138c1561898e965b8f5
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UnitRatio
+        Id: g=cdc231d2846184ee51e1c176bb55db0f
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=c308a0867c8d41a3177c1652890f6b34
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_UnitRatioCrntSet"
+        - Name: Info Attributes
+          Id: g=6a02912371eaf1d40225e137e8448f3d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ShiftID
+        Id: g=b9b6d05dea2c3f2f53bc5174ed122ce3
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=6761bfc0bb3bb678b3f863d6e36ea666
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ShiftIDCrntSet"
+        - Name: Info Attributes
+          Id: g=b61272fcc17938f3b5cb143a1d22fb5b
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ProductID
+        Id: g=3cad98b8e3733e3bbfe8a1f5034bc75a
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=9dad82847534b2e6be1c6cd445d9f2a1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ProductIDCrntSet"
+        - Name: Info Attributes
+          Id: g=f6089b1a2f0535c120d9549dd477c9e7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OrderID
+        Id: g=5ad085f019a6016500e6133c33574728
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=be7dd8df5d75bb30ec6ef87a86a9340d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OrderIDCrntSet"
+        - Name: Info Attributes
+          Id: g=a2eaa720b1a5245a7f58f941431dca40
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OperatorID
+        Id: g=a9e4fa56686b9eadfb65ddd46a5fb55c
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=d6885eb1a69b038b963afb1c27273d6f
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OperatorIDCrntSet"
+        - Name: Info Attributes
+          Id: g=0cf1fd206aeee8ae4e2cbbf8af0ec5fe
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEETarget
+        Id: g=21b5f86f56b3afa433c4abb983ee90d8
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=88741ee7433c1a4f10954b2cbe8579c2
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OEETargetCrntSet"
+        - Name: Info Attributes
+          Id: g=abda9ef96b7aac0ded64d235d5d1986a
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: PerfTarget
+        Id: g=783d35d9de0cd4b053b0476fa6391832
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=cbc92edc9a4e4e8b7823f4e888465056
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_PerfTargetCrntSet"
+        - Name: Info Attributes
+          Id: g=f2103c92cfef0ad1d8057ee57c12558a
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: QualTarget
+        Id: g=9d0018201876d0828192c9e55da542eb
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=fd6408e49c9296f1365c5df46b2d96b1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_QualTargetCrntSet"
+        - Name: Info Attributes
+          Id: g=2f9736b92cc625501f8954ece7179e0b
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: IdealCycleTime
+        Id: g=8b73148499c1403c2ec484f3ee0412ff
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=dd0a049c9c7f2352014b0b91efcbddbe
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_IdealCycleTimeCrntSet"
+        - Name: Info Attributes
+          Id: g=732faf22f9a698695918b6ee8546c673
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar1
+        Id: g=f3f8b21907de3e8e24f0ec62fc54f8dc
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=4ecce4d05e7f87678a9e6de9e7589c5c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar1CrntSet"
+        - Name: Info Attributes
+          Id: g=d335d3aa55b3704b07f782acb7e66e08
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar2
+        Id: g=5b41b12789173ffb40bd668529051385
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=68b8e79d8fa65782e8683f7917c63372
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar2CrntSet"
+        - Name: Info Attributes
+          Id: g=95804664438f57053c7ecf70adf594a6
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar3
+        Id: g=34801cfddaf07dba3974d386591b15a3
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=4e1860e54278d0ef93a988977e85b7f2
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar3CrntSet"
+        - Name: Info Attributes
+          Id: g=0a534072aab8589611145fa3514ce9c7
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar4
+        Id: g=0c8f81ce6d5199ef6f80ca71156e2b63
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=45186e0d54f8ddd7d8243d2e247c6be7
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar4CrntSet"
+        - Name: Info Attributes
+          Id: g=b29a959376ab83d142d38540b49fa2c0
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AvailTarget
+        Id: g=e4a02045aa8691958ce6b8ca4e4e1827
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Id: g=499aa75692bcfae751d889238723633b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AvailTargetCrntSet"
+        - Name: Info Attributes
+          Id: g=dce113711871271f14a40f5b1f1c354b
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: Data
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:OEE_SO.ParentData"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AssetID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AssetID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ScheduledStatus
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ScheduledStatus"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ScheduledTime
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ScheduledTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RunningStatus
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RunningStatus"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RunningTime
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RunningTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: TotalIdealTime
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_TotalIdealTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: GoodIdealTime
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_GoodIdealTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: TotalCount
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_TotalCount"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: TotalCountDelta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_TotalCountDelta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: GoodCount
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_GoodCount"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: GoodCountDelta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_GoodCountDelta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount1
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount1"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount1Delta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount1Delta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount2
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount2"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount2Delta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount2Delta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount3
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount3"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount3Delta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount3Delta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount4
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount4"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RejectCount4Delta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RejectCount4Delta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Mode
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_Mode"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: State
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_State"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ReasonCode
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ReasonCode"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Category
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_Category"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Duration
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_Duration"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: IdealCycleTime
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_IdealCycleTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ActualCycleTime
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ActualCycleTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: UnitRatio
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_UnitRatio"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ShiftID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ShiftID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ProductID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ProductID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OrderID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OrderID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OperatorID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OperatorID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar1
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar1"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar2
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar2"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar3
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar3"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ContextVar4
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ContextVar4"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: OEETarget
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_OEETarget"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AvailTarget
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AvailTarget"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: PerfTarget
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_PerfTarget"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: QualTarget
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_QualTarget"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: _NewDataTrigger
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_NewDataTrigger"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: AOIInfo
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:OEE_SO.ParentAOIInfo"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AOIInfoCmd
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AOIInfoCmd"
+        - Name: FQN
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.OEE.AOIInfo.AOIInfoCmd"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AOIInfoSts
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AOIInfoSts"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: InstanceName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_InstanceName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RoutineName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_RoutineName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ProgramName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_ProgramName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Type
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_Type"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Library
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_Library"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Revision
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_Revision"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AOIInfoCfg
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:OEE_SO.SO_AOIInfoCfg"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+  - Name: WAGES_PwrMon
+    Type: SmartObjectNode
+    Children:
+    - Name: Symbol name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataReady/DataReady:PwrMon_SO.WAGES_Parent"
+    - Name: Info Attributes
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: raI_Tec_Function
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raI_01_00_0106_WAGES"
+    - Name: ReqSet
+      Id: g=0f95d43bb249c41dfec8ba996510d480
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Id: g=5cd6524d0443e2ddfb1f612caf971958
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:PwrMon_SO.ParentReqSet"
+      - Name: Info Attributes
+        Id: g=1f051200449fbca0bde74f97c3a2c16e
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AssetID
+        Id: g=9c43e66bd0b8860d9113496b0234c733
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=cf9291f59e67ab64b10872fc1ba3db2f
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AssetIDReqSet"
+        - Name: FQN
+          Id: g=3ba281abef79fefec65939ad7f1ccefd
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.AssetID"
+        - Name: Info Attributes
+          Id: g=72b8b8919658b5fd0ec3f127e807a50e
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: EngineeringUnits
+        Id: g=5edce291b4cf6754010fe687663e9122
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=21b2130e9821dd7f01388d7c221c9d7b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_EngineeringUnitsReqSet"
+        - Name: FQN
+          Id: g=f48613204bb0ddbc8a23525123f22a75
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.EngineeringUnits"
+        - Name: Info Attributes
+          Id: g=ad0b0f7997c22d33d052d72c68c3f046
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ResourceType
+        Id: g=819f55418ecca95a0c2c89709e38b5c2
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=170da6f2e6e23ea361e6c761634157f0
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ResourceTypeReqSet"
+        - Name: FQN
+          Id: g=5ec66dd7ce10be43459b9eca9afdd3a6
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.ResourceType"
+        - Name: Info Attributes
+          Id: g=14916a57a993f663a8ed6e028f7c2021
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: MeasurementID
+        Id: g=7acd0f23d008b3053c12b52c8166a4aa
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=ed45bf69ae3b234eb184a91dbd36957f
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_MeasurementIDReqSet"
+        - Name: FQN
+          Id: g=2fb15745a36cd754defb9acc9a81bbfb
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.MeasurementID"
+        - Name: Info Attributes
+          Id: g=05ac4fa9c65c3e4a02a865df35f0172d
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AccuracyClass
+        Id: g=ffd77b08969f0b90aec546068118e4e9
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=902b5c339567313134b5175c526343b9
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AccuracyClassReqSet"
+        - Name: FQN
+          Id: g=a0bdf267cff2d902b124e3a7e809bb8c
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.AccuracyClass"
+        - Name: Info Attributes
+          Id: g=46ad70c584999283ecc151b93a259ff8
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AccuracyDomain
+        Id: g=467373b080febef0eded83b9463de8f4
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=9ce28e304235b1d504bfce4da444a7b3
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AccuracyDomainReqSet"
+        - Name: FQN
+          Id: g=25777e1317c5b4778f9d0482e52bd3bf
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.AccuracyDomain"
+        - Name: Info Attributes
+          Id: g=99ca31b9b484cd17acfa2caad9c03e1e
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: MeterID
+        Id: g=6dc8543b10bd212afc81b448b90188da
+        Type: SmartObjectWritableTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=c4f2ba43ea037d319f8a0e89c0f48852
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_MeterIDReqSet"
+        - Name: FQN
+          Id: g=ba2e4f93a3b6da47638166c7ab1e9fec
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.ReqSet.MeterID"
+        - Name: Info Attributes
+          Id: g=8d16f98100a303441ef46cd9f8ec1c3d
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: CrntSet
+      Id: g=bf1bae53b755e4fae23044bafe9d0fb5
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Id: g=fcc1e515f22c9d612e01c29c878b4856
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:PwrMon_SO.ParentCrntSet"
+      - Name: Info Attributes
+        Id: g=a32e2d030f3e095a39921080fa33e63b
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: EngineeringUnits
+        Id: g=786b30b8585e04811c56846b5dc9f3ea
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=f77b6892df8699aacecb20fd08a3f05f
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_EngineeringUnitsCrntSet"
+        - Name: Info Attributes
+          Id: g=2e25d9b8d32ad0d4affd465553e2e24a
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ResourceType
+        Id: g=4fc4464f05d3ad1c23ffb8e51292b6e2
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=f1ec44ab242d4ccab8d8f21fc9a7ed53
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ResourceTypeCrntSet"
+        - Name: Info Attributes
+          Id: g=748fca1a41c22706ae69c00a3b26afb2
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: MeasurementID
+        Id: g=1c57a4d02d36dbd0d429a654a1884611
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=a5004fd157fe1f9644688af0b128a4d9
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_MeasurementIDCrntSet"
+        - Name: Info Attributes
+          Id: g=baced722d81417659fdc3351c59ac3b1
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AccuracyDomain
+        Id: g=5bf4cc300b4ca31c7eaf4d940834d815
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=7c97f169cf787a898779ae610921638d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AccuracyDomainCrntSet"
+        - Name: Info Attributes
+          Id: g=65e9722e8cc098637806c70b4918134b
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AccuracyClass
+        Id: g=59ee91898a679c303697e648ab0a7c86
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Id: g=92dab66ae0ea38bfae2b2254016e91d1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AccuracyClassCrntSet"
+        - Name: Info Attributes
+          Id: g=86b751772627f4623a55e42b9e3cecb5
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AssetID
+        Id: g=05707af78ac0b8c8d00d2c2b8c157eee
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=19a242a458f0cc723f7c8cb22b059751
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AssetIDCrntSet"
+        - Name: Info Attributes
+          Id: g=8db916a1b29f9d40445fa8e7eeb81314
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: MeterID
+        Id: g=a44b4530f2445531042a9ac1fc2543d0
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Id: g=fa6354ee131dbebd8d4e547c4e34913d
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_MeterIDCrntSet"
+        - Name: Info Attributes
+          Id: g=aa5786ef4dd81de9f7eee35016269384
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: Data
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:PwrMon_SO.ParentData"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AssetID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AssetID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ConsumedResourceDelta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ConsumedResourceDelta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ConsumedResource
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ConsumedResource"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: GeneratedResourceDelta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_GeneratedResourceDelta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: GeneratedResource
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_GeneratedResource"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: NetResourceDelta
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_NetResourceDelta"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: NetResource
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_NetResource"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ConsumedValBeforeReset
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ConsumedValueBeforeReset"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ElectricalDemand
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ElectricalDemand"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: TransferRate
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_TransferRate"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Duration
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_Duration"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: _NewDataTrigger
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_NewDataTrigger"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: MeterID
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_MeterID"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+    - Name: AOIInfo
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataReady/DataReady:PwrMon_SO.ParentAOIInfo"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: AOIInfoCmd
+        Type: SmartObjectWritableTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AOIInfoCmd"
+        - Name: FQN
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/MachineModel.WAGES_PwrMon.AOIInfo.AOIInfoCmd"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AOIInfoSts
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AOIInfoSts"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: InstanceName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_InstanceName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: RoutineName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_RoutineName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: ProgramName
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_ProgramName"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Type
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_Type"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Library
+        Type: SmartObjectTag
+        DataType: String
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_Library"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: Revision
+        Type: SmartObjectTag
+        DataType: Float
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_Revision"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: AOIInfoCfg
+        Type: SmartObjectTag
+        DataType: Int32
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DataReady/DataReady:PwrMon_SO.SO_AOIInfoCrntSet"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+- Name: Handshake_OK_To_UP
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/OUT_07.13"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_OK_To_Down
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/OUT_07.14"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_Done_To_UP
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/OUT_07.12"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_Done_To_Down
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/OUT_07.15"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_OK_From_UP
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/IN_05.13"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_OK_From_Down
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/IN_05.14"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_Ready_From_UP
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/IN_05.12"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Handshake_Ready_From_Down
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/AB_ETH/HUP_CPU/Tags/Controller Tags/IN_05.15"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

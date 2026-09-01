@@ -1,0 +1,22 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_8UcLs" x="0px" y="0px" width="100px" height="109.28px" viewBox="0 0 100 109.28" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_29_" gradientUnits="userSpaceOnUse" x1="90.3105" y1="54.6401" x2="92.1719" y2="54.6401">
+    <stop offset="0" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+    <stop offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+  </linearGradient>
+  <rect x="90.311" fill="url(#SVGID_29_)" width="1.861" height="109.28"/>
+  <linearGradient id="SVGID_30_" gradientUnits="userSpaceOnUse" x1="7.8281" y1="54.6401" x2="9.689" y2="54.6401">
+    <stop offset="0" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+    <stop offset="1" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+  </linearGradient>
+  <rect x="7.828" fill="url(#SVGID_30_)" width="1.861" height="109.28"/>
+  <linearGradient id="SVGID_31_" gradientUnits="userSpaceOnUse" x1="92.1719" y1="54.6401" x2="97.1143" y2="54.6401">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.08"/>
+    <stop offset="0.9632" style="stop-color:#000000;stop-opacity:0.08"/>
+  </linearGradient>
+  <rect x="92.172" fill="url(#SVGID_31_)" width="4.942" height="109.28"/>
+  <linearGradient id="SVGID_32_" gradientUnits="userSpaceOnUse" x1="2.8857" y1="54.6401" x2="7.8281" y2="54.6401">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.08"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.08"/>
+  </linearGradient>
+  <rect x="2.886" fill="url(#SVGID_32_)" width="4.942" height="109.28"/>
+</svg>

@@ -1,0 +1,32 @@
+Name: Scripts
+Type: NetLogicCategoryFolder
+Children:
+- Name: MaintEventsDatabaseLoader
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: DeleteMaintEvents
+  - Class: Method
+    Name: LimitMaintEventsDBSize
+  - Name: DebugEnable
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: TargetTimeHorizon_Days
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.0
+  - Name: CurrentTimeHorizon_Days
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CurrentTableSize_MB
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: CurrentRowCount
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: MaxTableSize_MB
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: MaxRowCount
+    Type: BaseDataVariableType
+    DataType: Int32

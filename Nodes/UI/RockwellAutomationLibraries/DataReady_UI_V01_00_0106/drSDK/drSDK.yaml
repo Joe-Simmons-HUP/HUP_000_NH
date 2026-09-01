@@ -1,0 +1,7 @@
+Name: drSDK
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"DataReady SDK"}
+Children:
+- File: FaceplateComponents/FaceplateComponents.yaml
+- File: Panels/Panels.yaml
+- File: Widgets/Widgets.yaml

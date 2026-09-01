@@ -1,0 +1,21 @@
+Name: RockwellAutomationLibraries
+Type: FolderType
+Children:
+- Name: ns=19;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 19
+    },
+    "Body": {
+     "libraryGuid": "ec94fb5c980f1534d6aa8059bdfd9df1",
+     "objectGuid": "c9c67c79d6f6236cb1dabc1e84c5e852",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }
+- File: DataReady_UI_V01_00_0106/DataReady_UI_V01_00_0106.yaml
+- File: tcSDK/tcSDK.yaml

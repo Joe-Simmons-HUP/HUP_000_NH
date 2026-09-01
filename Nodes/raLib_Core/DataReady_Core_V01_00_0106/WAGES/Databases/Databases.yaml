@@ -1,0 +1,143 @@
+Name: Databases
+Type: DataStoresCategoryFolder
+Children:
+- Name: WAGESDatabase
+  Id: g=2ad1c1601dec35c9145b4b774f2d886b
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: raI_01_00_0106_WAGES
+      Id: g=7047c7de8d88d4ee534b7ee4c44661f4
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: MachineGuid
+          Type: StoreColumn
+          DataType: String
+        - Name: InstanceName
+          Type: StoreColumn
+          DataType: String
+        - Name: AssetID
+          Type: StoreColumn
+          DataType: String
+        - Name: MeterID
+          Type: StoreColumn
+          DataType: String
+        - Name: ConsumedResourceDelta
+          Type: StoreColumn
+          DataType: Float
+        - Name: ConsumedResource
+          Type: StoreColumn
+          DataType: Float
+        - Name: GeneratedResourceDelta
+          Type: StoreColumn
+          DataType: Float
+        - Name: GeneratedResource
+          Type: StoreColumn
+          DataType: Float
+        - Name: NetResourceDelta
+          Type: StoreColumn
+          DataType: Float
+        - Name: NetResource
+          Type: StoreColumn
+          DataType: Float
+        - Name: ElectricalDemand
+          Type: StoreColumn
+          DataType: Float
+        - Name: TransferRate
+          Type: StoreColumn
+          DataType: Float
+        - Name: ConsumedValBeforeReset
+          Type: StoreColumn
+          DataType: Float
+        - Name: Duration
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
+  - Class: Reference
+    Target: ns=27;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=15;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=59
+    Direction: Forward
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "raI_01_00_0106_WAGES_DBFile"
+  - Class: Reference
+    Target: ns=15;i=67
+    Direction: Forward

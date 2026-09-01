@@ -1,0 +1,8 @@
+Name: AB_ETH
+Type: RAEtherNetIPDriver
+Children:
+- File: HUP_CPU/HUP_CPU.yaml
+- Name: AllowRuntimeTagImport
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
